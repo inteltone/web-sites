@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Food</title>
+  <link rel="preload" href="fonts/CirceRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <header class="header">
+  <div class="header__logo">
+    <a href="#"><img src="img/svg/food-logo.svg" alt="Логотип ресторана Food"></a>
+  </div>
+  <nav class="header__nav nav-header">
+    <ul class="list-reset nav-header__list" id="nav">
+      <li class="nav-header__item"><a href="#menu" class="nav-header__link">Меню</a></li>
+      <li class="nav-header__item"><a href="#delivery" class="nav-header__link">Доставка</a></li>
+      <li class="nav-header__item"><a href="#contacts" class="nav-header__link">Оплата</a></li>
+      <li class="nav-header__item"><a href="#contacts" class="nav-header__link nav-header__link--featured">Бронь столика</a></li>
+    </ul>
+  </nav>
+  <div class="header__burger burger" aria-lebel="Открыть меню" aria-expanded="false" aria-controls="nav">
+    <img src="img/svg/burger-layers.svg" alt="Меню бургер">
+    <img src="img/svg/burger-cross.svg" class="is-hidden" alt="Меню закрыть">
+  </div>
+  <div class="header__socials socials">
+    <a href="#" class="social" aria-label="youtube" target="_blank"></a>
+    <a href="#" class="social" aria-label="вконтакте" target="_blank"></a>
+    <a href="#" class="social" aria-label="telegram" target="_blank"></a>
+  </div>
+</header>
+
+  <main class="main">
+    <div class="hero">
+  <h1 class="hero__title">Видовой ресторан Food Exxe Relo на Крестовском острове</h1>
+</div>
+ <section class="section section--about" id="about">
+  <p class="subtitle">О ресторане</p>
+  <h2 class="title">Food Exxe Relo</h2>
+  <div class="text">
+    <p class="text__item">
+      Sed vel ornare ut rhoncus, ac ut nibh. Amet at sit et nibh. In lectus phasellus non ornare eget velit. Facilisi urna, tristique dui, rhoncus, dolor. Tincidunt enim gravida dignissim leo pulvinar sit volutpat nulla vestibulum.
+    </p>
+    <p class="text__item">
+      Morbi pellentesque enim massa laoreet vel id. Lectus ac, facilisis neque turpis. Morbi massa enim nullam sem vehicula. Amet quis pellentesque enim porttitor lectus interdum. Nisi, faucibus pharetra at porttitor. Fringilla luctus pretium in viverra. In
+      adipiscing tempor amet malesuada ullamcorper ut sagittis. Dui, scelerisque vulputate risus massa dictum. Cras at quis in eu, faucibus feugiat vel. At.
+    </p>
+
+  </div>
+</section>
+ <section class="section section--menu" id="menu">
+  <p class="subtitle">Меню</p>
+  <h2 class="title">Меню</h2>
+  <div class="text">
+    <p class="text__item">
+      At faucibus nullam mauris vitae ut non. Augue libero non nibh nec, et eget erat. Nascetur nunc neque, varius massa aliquam interdum turpis massa. Ac tortor aliquam risus, interdum nisl mauris sit. Ut placerat fermentum pellentesque ac at. Vitae venenatis
+      faucibus urna mi eget vitae quam eu. Euismod sed mauris id turpis iaculis. Erat rutrum dolor, vitae morbi.
+    </p>
+    <p class="text__item">
+      Nunc cras cras aliquet blandit faucibus massa sagittis semper.
+    </p>
+  </div>
+  <div class="visual-blocks">
+    <div class="visual-block">
+      <div class="visual-block__img">
+        <img src="img/menu.jpg" alt="Основное меню">
+      </div>
+      <p class="subtitle">Основное меню</p>
+    </div>
+    <div class="visual-block">
+      <div class="visual-block__img">
+        <img src="img/card.jpg" alt="Барная карта">
+      </div>
+      <p class="subtitle">Барная карта</p>
+    </div>
+  </div>
+</section>
+ <section class="section section--delivery" id="delivery">
+  <p class="subtitle">Доставка</p>
+  <h2 class="title">Служба доставки</h2>
+  <div class="text text--delivery">
+    <p class="text__item">
+      Phasellus diam, ultrices lobortis integer et. Diam, purus vel sagittis, non, a. In risus, venenatis enim vitae mauris aliquet orci. Consectetur nibh interdum nullam ut lobortis eu etiam sem. Et in vitae pellentesque non, lectus orci natoque faucibus suspendisse.
+      Semper aliquam id et ultrices velit donec lacus. In odio sit nibh volutpat cras placerat sit feugiat dignissim. Rutrum et suspendisse tortor, lobortis eleifend in fringilla. Egestas cursus imperdiet cursus dui, nulla id massa. Hendrerit nam enim
+      semper porttitor imperdiet diam semper. Nulla sit etiam cras morbi enim elementum euismod sapien.
+    </p>
+  </div>
+  <div class="delivery-buttons">
+    <button class="btn-reset btn btn--dark">Подробнее</button>
+    <button class="btn-reset btn">Условия доставки</button>
+  </div>
+</section>
+ <section class="section section--contacts" id="contacts">
+  <p class="subtitle">Контакты</p>
+  <div class="info">
+    <ul class="list-reset info__list">
+      <li class="info__item">
+        <span class="info__time"><span class="info__num">2</span> мин</span>
+        <span class="info__town">из центра Санкт‑Петербурга</span>
+      </li>
+      <li class="info__item">
+        <span class="info__time"><span class="info__num">12</span> мин</span>
+        <span class="info__town">из города Зеленогорск</span>
+      </li>
+      <li class="info__item">
+        <span class="info__time"><span class="info__num">42</span> мин</span>
+        <span class="info__town">из аэропорта Пулково</span>
+      </li>
+      <li class="info__item">
+        <span class="info__time"><span class="info__num">52</span> мин</span>
+        <span class="info__town">из города Павловск</span>
+      </li>
+    </ul>
+  </div>
+  <div class="contacts">
+    <address class="address">Санкт-Петербург, Северная дорога, 11</address>
+    <a href="tel:+79217777777" class="tel">+7 921 777-77-77</a>
+    <p class="contacts__title bold">Время работы</p>
+    <p><span class="bold">Вск-Чт</span> с 12:00 до 23:00</p>
+    <p><span class="bold">Пт-Сб</span> с 12:00 до 03:00</p>
+    <div class="contacts-buttons">
+      <button class="btn-reset btn btn--small btn--dark">Бронь столика</button>
+      <button class="btn-reset btn btn--small btn--negative">Задать вопрос</button>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__logo">
+      <a href="#" aria-lebel="Логотип ресторана Food"><img src="img/svg/food-logo.svg" alt="Логотип ресторана Food"></a>
+    </div>
+    <a class="footer__confidence" href="#">Политика конфиденциальности</a>
+    <a class="footer__site-dev" href="#">Дизайн d-e-n.ru</a>
+  </div>
+</footer>
+
+</body>
+
+</html>
