@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <!--  -->
+
+  <title>Главная | WIN2WIN</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+  <div class="header__inner">
+    <a href="./" class="header__logo" title="Перейти на Главную"><img src="./img/svg/misc/logo-site.svg" alt="Логотип WIN2WIN"></a>
+    <nav class="header__nav" data-header-nav>
+      <div class="header__burger-menu-block" data-burger-menu-block>
+        <div class="burger" data-burger>
+          <div class="burger__inner">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="prim-menu">
+          <a href="./about.html" class="prim-menu__item">О нас</a>
+          <a href="./services.html" class="prim-menu__item">Услуги</a>
+          <a href="./cases.html" class="prim-menu__item">Кейсы</a>
+          <a href="./clients.html" class="prim-menu__item">Клиенты</a>
+          <a href="./news.html" class="prim-menu__item">Новости</a>
+          <a href="#contacts" class="prim-menu__item">Контакты</a>
+        </div>
+      </div>
+      <div class="header__lang" data-lang>
+        <button class="active">Ru</button>
+        <button>En</button>
+      </div>
+    </nav>
+    <a href="#contacts" class="btn header__btn" title="Связаться с нами">
+      <span class="btn__text">Связаться с нами</span>
+      <svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg>
+    </a>
+  </div>
+</header>
+
+  <main class="main full container">
+    <section class="hero">
+  <h1 class="hero__title" data-hero-title>
+    <span class="hero__still">Мы решаем любые задачи</span>
+    <span class="hero__still">в области коммуникаций</span>
+  </h1>
+  <ul class="hero__words-list visually-hidden" data-words-list>
+    <li>консалтинг</li>
+    <li>мерч и корпоративные подарки</li>
+    <li>создание сайтов</li>
+    <li>PR</li>
+    <li>мониторинг и исследования</li>
+  </ul>
+  <div class="block-youtube-iframe-overlay">  
+  <div class="overlay" data-video-overlay>
+    <img class="overlay__img" src="./img/misc/img-video-overlay.webp" alt="">
+    <svg class="overlay__btn" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id='circle-expand-fade' opacity="0.5" d="M100 185C146.944 185 185 146.944 185 100C185 53.0558 146.944 15 100 15C53.0558 15 15 53.0558 15 100C15 146.944 53.0558 185 100 185Z" stroke="#FBFBFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path class="overlay__btn-body" opacity="0.7" d="M100 175C141.421 175 175 141.421 175 100C175 58.5786 141.421 25 100 25C58.5786 25 25 58.5786 25 100C25 141.421 58.5786 175 100 175Z" fill="#50D75D" stroke="#FBFBFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M110.326 97.3825C112.371 98.528 112.371 101.472 110.326 102.618L94.4658 111.499C92.4661 112.619 90 111.174 90 108.882V91.1184C90 88.8264 92.4661 87.381 94.4658 88.5009L110.326 97.3825Z" fill="#FBFBFB" stroke="#FBFBFB" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>
+  </div>
+</div>
+
+</section>
+
+    <!--  -->
+    <section class="services auto-grid">
+  <div class="services__title-block">
+    <h2>Услуги</h2>
+    <p>Мы предлагаем интегрированные коммуникационные решения в B2C и B2B</p>
+  </div>
+  <div class="card-service">
+    <div class="card-service__img">
+      <img src="./img/services/consulting.webp" alt="Консалтинг">
+    </div>
+    <h3 class="card-service__title">Консалтинг</h3>
+    <p class="card-service__desc">Эффективные коммуникации для бизнеса</p>
+    <a href="" class="card-service__btn btn-circle"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+  </div>
+  <div class="card-service">
+    <div class="card-service__img">
+      <img src="./img/services/influence-marketing.webp" alt="Инфлюенс-маркетинг">
+    </div>
+    <h3 class="card-service__title">Инфлюенс-маркетинг</h3>
+    <p class="card-service__desc">Кампании с блогерами</p>
+    <a href="" class="card-service__btn btn-circle"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+  </div>
+  <div class="card-service">
+    <div class="card-service__img">
+      <img src="./img/services/smm.webp" alt="SMM">
+    </div>
+    <h3 class="card-service__title">SMM</h3>
+    <p class="card-service__desc">SMM и продвижение в digital-среде</p>
+    <a href="" class="card-service__btn btn-circle"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+  </div>
+  <div class="card-service">
+    <div class="card-service__img">
+      <img src="./img/services/web-development.webp" alt="Создание сайтов">
+    </div>
+    <h3 class="card-service__title">Создание сайтов</h3>
+    <p class="card-service__desc">Веб-разработка и поддержка</p>
+    <a href="" class="card-service__btn btn-circle"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+  </div>
+  <div class="card-service">
+    <div class="card-service__img">
+      <img src="./img/services/pr.webp" alt="PR">
+    </div>
+    <h3 class="card-service__title">PR</h3>
+    <p class="card-service__desc">Усиление присутствия в инфополе</p>
+    <a href="" class="card-service__btn btn-circle"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+  </div>
+  <div class="card-service">
+    <div class="card-service__img">
+      <img src="./img/services/event.webp" alt="Event">
+    </div>
+    <h3 class="card-service__title">Event</h3>
+    <p class="card-service__desc">Мероприятия любых форматов</p>
+    <a href="./event.html" class="card-service__btn btn-circle"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+  </div>
+  <div class="card-service">
+    <div class="card-service__img">
+      <img src="./img/services/presents.webp" alt="Мерч и корпоративные подарки">
+    </div>
+    <h3 class="card-service__title">Корпоративный мерч подарки</h3>
+    <p class="card-service__desc">Сувенирная продукция со смыслом</p>
+    <a href="" class="card-service__btn btn-circle"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+  </div>
+  <div class="card-service">
+    <div class="card-service__img">
+      <img src="./img/services/monitoring.webp" alt="Мониторинг и исследования">
+    </div>
+    <h3 class="card-service__title">Мониторинг и исследования</h3>
+    <p class="card-service__desc">Анализ инфополя и изучение аудитории</p>
+    <a href="" class="card-service__btn btn-circle"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+  </div>
+  <div class="card-service">
+    <div class="card-service__img">
+      <img src="./img/services/design.webp" alt="Дизайн и продакшн">
+    </div>
+    <h3 class="card-service__title">Дизайн и продакшн</h3>
+    <p class="card-service__desc">Креативные визуальные решения</p>
+    <a href="" class="card-service__btn btn-circle"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+  </div>
+  <div class="card-service">
+    <div class="card-service__img">
+      <img src="./img/services/brending.webp" alt="Брендинг">
+    </div>
+    <h3 class="card-service__title">Брендинг</h3>
+    <p class="card-service__desc">Разработка бренда под ключ</p>
+    <a href="" class="card-service__btn btn-circle"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+  </div>
+  <div class="services__proposal">
+    <h3 class="services__proposal-title">Оставить заявку</h3>
+    <a href="" class="services__proposal-btn btn-circle"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+  </div>
+
+</section>
+
+    <!--  -->
+    <section class="about full container">
+  <div class="about__inner">
+    <div class="about__imgs">
+      <img src="./img/svg/misc/logo-big.svg" alt="Логотип WIN2WIN">
+      <img id="about__w-1" src="./img/svg/misc/w.svg" alt="">
+      <img id="about__w-2" src="./img/svg/misc/w.svg" alt="">
+    </div>
+    <div class="about__desc">
+      <h2 class="about__desc-title">О нас</h2>
+      <div class="about__desc-text">
+        <p>Мы — коммуникационное агентство Win2Win Communications. Более 10 лет помогаем компаниям и брендам рассказывать о себе.</p>
+        <p>Мы внимательно следим за трендами, реализуем проекты любой сложности, ставим реальные цели и достигаем их.</p>
+      </div>
+      <a href="" class="about__desc-btn btn btn--dark">
+        <span class="btn__text">Подробнее</span>
+        <svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg>
+      </a>
+    </div>
+    <ul class="about__stats">
+      <li class="about__stats-item">
+        <p class="about__stats-title">топ-40</p>
+        <p class="about__stats-text">рейтинга НР2К</p>
+      </li>
+      <li class="about__stats-item">
+        <p class="about__stats-title">26</p>
+        <p class="about__stats-text">наград</p>
+      </li>
+      <li class="about__stats-item">
+        <p class="about__stats-title">500 +</p>
+        <p class="about__stats-text">реализованных проектов</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <!--  -->
+    <section class="cases">
+  <h2 class="cases__title">Кейсы</h2>
+  <div class="cases__block auto-grid">
+    <div class="card-case">
+      <div class="card-case__top">
+        <div class="card-case__img">
+          <img src="./img/cases/mascotte.jpg" alt="mascotte">
+        </div>
+        <div class="card-case__logo-wrap">
+          <img class="card-case__logo" src="./img/cases-logo/mascotte.png" alt="mascotte logo">
+        </div>
+        <a href="./case.html" class="card-case__btn btn-circle btn-circle--dark"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+      </div>
+      <div class="card-case__btm">
+        <p class="card-case__title h3">Mascotte</p>
+        <p class="card-case__desc">Работа с инфлюенсерами: повышение узнаваемости бренда Ferodo</p>
+      </div>
+    </div>
+    <div class="card-case">
+      <div class="card-case__top">
+        <div class="card-case__img">
+          <img src="./img/cases/discovery.jpg" alt="Discovery">
+        </div>
+        <div class="card-case__logo-wrap">
+          <img class="card-case__logo" src="./img/cases-logo/discovery.png" alt="Discovery logo">
+        </div>
+        <a href="" class="card-case__btn btn-circle btn-circle--dark"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+      </div>
+      <div class="card-case__btm">
+        <p class="card-case__title h3">Discovery</p>
+        <p class="card-case__desc">Спасти тигра</p>
+      </div>
+    </div>
+    <div class="card-case">
+      <div class="card-case__top">
+        <div class="card-case__img">
+          <img src="./img/cases/tlc.jpg" alt="TLC">
+        </div>
+        <div class="card-case__logo-wrap">
+          <img class="card-case__logo" src="./img/cases-logo/tlc.png" alt="TLC logo">
+        </div>
+        <a href="" class="card-case__btn btn-circle btn-circle--dark"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+      </div>
+      <div class="card-case__btm">
+        <p class="card-case__title h3">TLC</p>
+        <p class="card-case__desc">Работа с инфлюенсерами: повышение узнаваемости бренда Ferodo</p>
+      </div>
+    </div>
+    <div class="card-case">
+      <div class="card-case__top">
+        <div class="card-case__img">
+          <img src="./img/cases/5-generations.jpg" alt="Память поколений">
+        </div>
+        <div class="card-case__logo-wrap">
+          <img class="card-case__logo" src="./img/cases-logo/5-generations.png" alt="Память поколений logo">
+        </div>
+        <a href="" class="card-case__btn btn-circle btn-circle--dark"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+      </div>
+      <div class="card-case__btm">
+        <p class="card-case__title h3">Память поколений</p>
+        <p class="card-case__desc">Работа с инфлюенсерами: повышение узнаваемости бренда Ferodo</p>
+      </div>
+    </div>
+    <div class="card-case">
+      <div class="card-case__top">
+        <div class="card-case__img">
+          <img src="./img/cases/siemens.jpg" alt="Siemens">
+        </div>
+        <div class="card-case__logo-wrap">
+          <img class="card-case__logo" src="./img/cases-logo/siemens.png" alt="Siemens logo">
+        </div>
+        <a href="" class="card-case__btn btn-circle btn-circle--dark"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+      </div>
+      <div class="card-case__btm">
+        <p class="card-case__title h3">Siemens</p>
+        <p class="card-case__desc">Торжественная высадка деревьев у Московской консерватории</p>
+      </div>
+    </div>
+    <div class="card-case">
+      <div class="card-case__top">
+        <div class="card-case__img">
+          <img src="./img/cases/merz.jpg" alt="Merz">
+        </div>
+        <div class="card-case__logo-wrap">
+          <img class="card-case__logo" src="./img/cases-logo/merz.png" alt="Merz logo">
+        </div>
+        <a href="" class="card-case__btn btn-circle btn-circle--dark"><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+      </div>
+      <div class="card-case__btm">
+        <p class="card-case__title h3">Merz</p>
+        <p class="card-case__desc">Торжественная высадка деревьев у Московской консерватории</p>
+      </div>
+    </div>
+  </div>
+  <a href="./cases.html" class="cases__btn btn">
+    <span class="btn__text">все кейсы</span>
+    <svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg>
+  </a>
+</section>
+
+    <!--  -->
+    <section class="testims">
+  <h2 class="testims__title">Отзывы</h2>
+  <div class="swiper testims__slider" data-testims-slider>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide testims__slide">
+        <div class="testims__slide-logo">
+          <img src="./img/testims-slider/carcade.webp" alt="carcade">
+        </div>
+        <div class="testims__slide-text">
+          <p>Win2Win — большие профессионалы, которые помогают интересно преподносить даже сложные продукты. Мы сотрудничаем с начала 2021 года, и за это время команда агентства наладила удобный и продуктивный процесс коммуникации — именно такой, который
+            устраивает нас по всем параметрам.</p>
+          <p>Очень хотелось бы отметить креативный подход ко всем задачам, нестандартные, но при этом отвечающие нашим стандартам решения, оперативность, пунктуальность, грамотные отчёты, выполнение KPI и ответственное отношение к нашему совместному проекту.
+            Надеемся на долгое и вдохновляющее сотрудничество!</p>
+        </div>
+        <div class="testims__slide-person">
+          <img class="testims__slide-person-img" src="./img/testims-slider/efremova.webp" alt="Евгения Ефремова">
+          <p class="testims__slide-person-name">Евгения Ефремова</p>
+          <p class="testims__slide-person-position">Ведущий менеджер по PR и маркетинговым коммуникациям в Carcade</p>
+        </div>
+      </div>
+      <div class="swiper-slide testims__slide">
+        <div class="testims__slide-logo">
+          <img src="./img/testims-slider/merz.webp" alt="merz">
+        </div>
+        <div class="testims__slide-text">
+          <p>Win2Win — большие профессионалы, которые помогают интересно преподносить даже сложные продукты. Мы сотрудничаем с начала 2021 года, и за это время команда агентства наладила удобный и продуктивный процесс коммуникации — именно такой, который
+            устраивает нас по всем параметрам.</p>
+          <p>Очень хотелось бы отметить креативный подход ко всем задачам, нестандартные, но при этом отвечающие нашим стандартам решения, оперативность, пунктуальность, грамотные отчёты, выполнение KPI и ответственное отношение к нашему совместному проекту.
+            Надеемся на долгое и вдохновляющее сотрудничество!</p>
+        </div>
+        <div class="testims__slide-person">
+          <img class="testims__slide-person-img" src="./img/testims-slider/efremova.webp" alt="Евгения Ефремова">
+          <p class="testims__slide-person-name">Евгения Ефремова</p>
+          <p class="testims__slide-person-position">Ведущий менеджер по PR и маркетинговым коммуникациям в Carcade</p>
+        </div>
+      </div>
+      <div class="swiper-slide testims__slide">
+        <div class="testims__slide-logo">
+          <img src="./img/testims-slider/carcade.webp" alt="carcade">
+        </div>
+        <div class="testims__slide-text">
+          <p>Win2Win — большие профессионалы, которые помогают интересно преподносить даже сложные продукты. Мы сотрудничаем с начала 2021 года, и за это время команда агентства наладила удобный и продуктивный процесс коммуникации — именно такой, который
+            устраивает нас по всем параметрам.</p>
+          <p>Очень хотелось бы отметить креативный подход ко всем задачам, нестандартные, но при этом отвечающие нашим стандартам решения, оперативность, пунктуальность, грамотные отчёты, выполнение KPI и ответственное отношение к нашему совместному проекту.
+            Надеемся на долгое и вдохновляющее сотрудничество!</p>
+        </div>
+        <div class="testims__slide-person">
+          <img class="testims__slide-person-img" src="./img/testims-slider/efremova.webp" alt="Евгения Ефремова">
+          <p class="testims__slide-person-name">Евгения Ефремова</p>
+          <p class="testims__slide-person-position">Ведущий менеджер по PR и маркетинговым коммуникациям в Carcade</p>
+        </div>
+      </div>
+    </div>
+    <div class="testims__slider-btns">
+      <button class="btn-slider btn-slider--prev btn-slider--dark" title="Предыдущий слайд"><svg><use xlink:href='./img/svg/sprite.svg#arrow-control'></use></svg></button>
+      <button class="btn-slider btn-slider--next btn-slider--dark" title="Следующий слайд"><svg><use xlink:href='./img/svg/sprite.svg#arrow-control'></use></svg></button>
+    </div>
+  </div>
+</section>
+
+    <!--  -->
+    <section class="awards full container">
+  <div class="awards__inner">
+    <h2 class="awards__title">Наши награды</h2>
+    <div class="swiper awards__slider" data-awards-slider>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide awards__slide">
+          <svg class="awards__img"><use xlink:href='./img/svg/sprite.svg#star'></use></svg>
+          <div class="awards__desc">
+            <p class="awards__desc-title h4">PROBA Awards 2022</p>
+            <p class="awards__desc-text">Победитель в номинации «Общественно-значимые PR-кампании»</p>
+          </div>
+        </div>
+        <div class="swiper-slide awards__slide">
+          <svg class="awards__img"><use xlink:href='./img/svg/sprite.svg#star'></use></svg>
+          <div class="awards__desc">
+            <p class="awards__desc-title h4">European Excellence Awards</p>
+            <p class="awards__desc-text">Финалист в номинации «Small Budget Campaign»</p>
+          </div>
+        </div>
+        <div class="swiper-slide awards__slide">
+          <svg class="awards__img"><use xlink:href='./img/svg/sprite.svg#star'></use></svg>
+          <div class="awards__desc">
+            <p class="awards__desc-title h4">Silver Mercury 2022</p>
+            <p class="awards__desc-text">Серебро в номинации «Лучшая корпоративная digital-кампания, реализованная для привлечения внимания к общественно важным проблемам»</p>
+          </div>
+        </div>
+        <div class="swiper-slide awards__slide">
+          <svg class="awards__img"><use xlink:href='./img/svg/sprite.svg#star'></use></svg>
+          <div class="awards__desc">
+            <p class="awards__desc-title h4">Silver Mercury 2022</p>
+            <p class="awards__desc-text">Серебро в номинации «Лучшая корпоративная digital-кампания, реализованная для привлечения внимания к общественно важным проблемам»</p>
+          </div>
+        </div>
+        <div class="swiper-slide awards__slide">
+          <svg class="awards__img"><use xlink:href='./img/svg/sprite.svg#star'></use></svg>
+          <div class="awards__desc">
+            <p class="awards__desc-title h4">PROBA Awards 2022</p>
+            <p class="awards__desc-text">Победитель в номинации «Общественно-значимые PR-кампании»</p>
+          </div>
+        </div>
+        <div class="swiper-slide awards__slide">
+          <svg class="awards__img"><use xlink:href='./img/svg/sprite.svg#star'></use></svg>
+          <div class="awards__desc">
+            <p class="awards__desc-title h4">European Excellence Awards</p>
+            <p class="awards__desc-text">Финалист в номинации «Small Budget Campaign»</p>
+          </div>
+        </div>
+        <div class="swiper-slide awards__slide">
+          <svg class="awards__img"><use xlink:href='./img/svg/sprite.svg#star'></use></svg>
+          <div class="awards__desc">
+            <p class="awards__desc-title h4">Silver Mercury 2022</p>
+            <p class="awards__desc-text">Серебро в номинации «Лучшая корпоративная digital-кампания, реализованная для привлечения внимания к общественно важным проблемам»</p>
+          </div>
+        </div>
+        <div class="swiper-slide awards__slide">
+          <svg class="awards__img"><use xlink:href='./img/svg/sprite.svg#star'></use></svg>
+          <div class="awards__desc">
+            <p class="awards__desc-title h4">Silver Mercury 2022</p>
+            <p class="awards__desc-text">Серебро в номинации «Лучшая корпоративная digital-кампания, реализованная для привлечения внимания к общественно важным проблемам»</p>
+          </div>
+        </div>
+        <div class="swiper-slide awards__slide">
+          <svg class="awards__img"><use xlink:href='./img/svg/sprite.svg#star'></use></svg>
+          <div class="awards__desc">
+            <p class="awards__desc-title h4">PROBA Awards 2022</p>
+            <p class="awards__desc-text">Победитель в номинации «Общественно-значимые PR-кампании»</p>
+          </div>
+        </div>
+        <div class="swiper-slide awards__slide">
+          <svg class="awards__img"><use xlink:href='./img/svg/sprite.svg#star'></use></svg>
+          <div class="awards__desc">
+            <p class="awards__desc-title h4">European Excellence Awards</p>
+            <p class="awards__desc-text">Финалист в номинации «Small Budget Campaign»</p>
+          </div>
+        </div>
+        <div class="swiper-slide awards__slide">
+          <svg class="awards__img"><use xlink:href='./img/svg/sprite.svg#star'></use></svg>
+          <div class="awards__desc">
+            <p class="awards__desc-title h4">Silver Mercury 2022</p>
+            <p class="awards__desc-text">Серебро в номинации «Лучшая корпоративная digital-кампания, реализованная для привлечения внимания к общественно важным проблемам»</p>
+          </div>
+        </div>
+        <div class="swiper-slide awards__slide">
+          <svg class="awards__img"><use xlink:href='./img/svg/sprite.svg#star'></use></svg>
+          <div class="awards__desc">
+            <p class="awards__desc-title h4">Silver Mercury 2022</p>
+            <p class="awards__desc-text">Серебро в номинации «Лучшая корпоративная digital-кампания, реализованная для привлечения внимания к общественно важным проблемам»</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="awards__slider-btns">
+      <button class="btn-slider btn-slider--prev btn-slider--light awards-prev" title="Предыдущий слайд"><svg><use xlink:href='./img/svg/sprite.svg#arrow-control'></use></svg></button>
+      <button class="btn-slider btn-slider--next btn-slider--light awards-next" title="Следующий слайд"><svg><use xlink:href='./img/svg/sprite.svg#arrow-control'></use></svg></button>
+    </div>
+  </div>
+</section>
+
+    <!--  -->
+    <section class="clients">
+  <h2 class="clients__title">Наши клиенты</h2>
+  <div class="clients__sliders">
+    <div class="swiper clients__slider" data-clients-slider1>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide clients__slide">
+          <img class="clients__slide-img" src="./img/clients-logo/discovery.webp" alt="discovery logo">
+        </div>
+        <div class="swiper-slide clients__slide">
+          <img class="clients__slide-img" src="./img/clients-logo/volvo.webp" alt="volvo logo">
+        </div>
+        <div class="swiper-slide clients__slide">
+          <img class="clients__slide-img" src="./img/clients-logo/mascotte.webp" alt="mascotte logo">
+        </div>
+        <div class="swiper-slide clients__slide">
+          <img class="clients__slide-img" src="./img/clients-logo/tlc.webp" alt="tlc logo">
+        </div>
+        <div class="swiper-slide clients__slide">
+          <img class="clients__slide-img" src="./img/clients-logo/siemens.webp" alt="siemens logo">
+        </div>
+        <div class="swiper-slide clients__slide">
+          <img class="clients__slide-img" src="./img/clients-logo/ferodo.webp" alt="ferodo logo">
+        </div>
+
+      </div>
+
+    </div>
+    <div class="swiper clients__slider" data-clients-slider2>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide clients__slide">
+          <img class="clients__slide-img" src="./img/clients-logo/discovery.webp" alt="discovery logo">
+        </div>
+        <div class="swiper-slide clients__slide">
+          <img class="clients__slide-img" src="./img/clients-logo/volvo.webp" alt="volvo logo">
+        </div>
+        <div class="swiper-slide clients__slide">
+          <img class="clients__slide-img" src="./img/clients-logo/mascotte.webp" alt="mascotte logo">
+        </div>
+        <div class="swiper-slide clients__slide">
+          <img class="clients__slide-img" src="./img/clients-logo/tlc.webp" alt="tlc logo">
+        </div>
+        <div class="swiper-slide clients__slide">
+          <img class="clients__slide-img" src="./img/clients-logo/siemens.webp" alt="siemens logo">
+        </div>
+        <div class="swiper-slide clients__slide">
+          <img class="clients__slide-img" src="./img/clients-logo/ferodo.webp" alt="ferodo logo">
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+    <!--  -->
+    <section class="news">
+  <h2 class="news__title">Новости</h2>
+  <div class="news__cards-block auto-grid">
+    <div class="card-news">
+      <a href="" class="card-news__img" title="Фестиваль Silver Mercury"><img src="./img/news/01.webp" alt=""></a>
+      <a href="" class="card-news__text">Стартовал новый сезон фестиваля Silver Mercury</a>
+    </div>
+    <div class="card-news">
+      <a href="" class="card-news__img" title="сертификация VK Рекламы"><img src="./img/news/02.webp" alt=""></a>
+      <a href="" class="card-news__text">Вместе с Нетологией и коллегами из VK рассказываем, зачем нужна сертификация VK Рекламы</a>
+    </div>
+    <div class="card-news">
+      <a href="" class="card-news__img" title="Дубляж от YouTube"><img src="./img/news/03.webp" alt=""></a>
+      <a href="" class="card-news__text">Дубляж от YouTube, генерация креативов от VK и рост глобального рынка ИИ для соцсетей: как нейросети меняют SMM</a>
+    </div>
+  </div>
+  <a href="" class="news__btn btn"><span class="btn__text">Все новости</span><svg><use xlink:href='./img/svg/sprite.svg#arrow'></use></svg></a>
+</section>
+
+    <!--  -->
+  </main>
+  <section class="contacts breakout" id="contacts">
+  <div class="contacts__item client">
+    <p class="contacts__title h3">Стать <br>клиентом</p>
+    <div class="contacts__person">
+      <p class="contacts__name">Екатерина Томулянис</p>
+      <p class="contacts__position">Директор по развитию</p>
+    </div>
+    <div class="contacts__links">
+      <a href="tel:+79163373618">+7 916 337-36-18</a>
+      <a href="mailto:Ekaterina.Tomulyanis@win2win.ru">Ekaterina.Tomulyanis@win2win.ru</a>
+    </div>
+  </div>
+  <div class="contacts__item team">
+    <p class="contacts__title h3">Стать частью <br>команды</p>
+    <div class="contacts__person">
+      <p class="contacts__name">Сергей Журавлев</p>
+      <p class="contacts__position">Директор по развитию</p>
+    </div>
+    <div class="contacts__links">
+      <a href="tel:+74956644800">+7 495 664-48-00</a>
+      <a href="mailto:hr@win2win.ru">hr@win2win.ru</a>
+    </div>
+  </div>
+  <div class="contacts__item office">
+    <p class="contacts__title h3">Офис</p>
+    <address class="contacts__address">125130, г. Москва, Старопетровский пр., д. 11, корп. 1, Бизнес-центр «Старопетровский Атриум»</address>
+    <div class="contacts__links">
+      <a href="tel:+74956644800">+7 495 664-48-00</a>
+      <a href="mailto:hr@win2win.ru">hr@win2win.ru</a>
+    </div>
+  </div>
+</section>
+
+  <!--  -->
+  <footer class="footer full">
+  <div class="footer__top">
+    <svg class="footer__logo"><use xlink:href='./img/svg/sprite.svg#logo-footer'></use></svg>
+    <div class="footer__menu menu-footer">
+      <a class="menu-footer__item" href="./about.html">О нас</a>
+      <a class="menu-footer__item" href="./services.html">Услуги</a>
+      <a class="menu-footer__item" href="./cases.html">Кейсы</a>
+      <a class="menu-footer__item" href="./clients.html">Клиенты</a>
+      <a class="menu-footer__item" href="./news.html">Новости</a>
+    </div>
+    <div class="footer__socials socials">
+      <a href="https://youtube.com" class="socials__item" title="YouTube"><svg><use xlink:href='./img/svg/sprite.svg#youtube'></use></svg></a>
+      <a href="https://vk.com" class="socials__item" title="VK"><svg><use xlink:href='./img/svg/sprite.svg#vk'></use></svg></a>
+      <a href="https://telegram.org" class="socials__item" title="Telegram"><svg><use xlink:href='./img/svg/sprite.svg#telegram'></use></svg></a>
+      <a href="https://vc.ru" class="socials__item" title="VC.RU"><svg><use xlink:href='./img/svg/sprite.svg#vc'></use></svg></a>
+    </div>
+  </div>
+  <div class="footer__btm">
+    <p class="copyright">© Все права защищены</p>
+    <a class="footer__btm-link" href="./privacy-policy.html">Политика конфиденциальности</a>
+    <a class="footer__btm-link" href="./public-offer.html">Публичная оферта</a>
+    <a href="https://bearlogics.ru" class="site-developer">
+      <p>Разработка сайта</p>
+      <div class="developer-logo-wrap">
+        <svg class="logo-bearlogics"><use xlink:href='./img/svg/sprite.svg#logo-bearlogics'></use></svg>
+        <i class="bear-anim"></i>
+      </div>
+    </a>
+  </div>
+</footer>
+
+</body>
+
+</html>
