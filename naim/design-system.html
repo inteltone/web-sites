@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System | NAIM</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+  <header class="header-site">
+
+  </header>
+
+  <main class="main">
+
+    <div class="des-sys">
+      <button class="btn">Записаться</button>
+      <button class="btn btn--ghost">Записаться</button>
+      <button class="btn" disabled>Записаться</button>
+      <button class="btn btn--red">Записаться</button>
+      <button class="btn btn--red-ghost">Записаться</button>
+      <button class="btn-slr prev" aria-label="кнопка слайдера предыдущий"><svg class="">
+        <use xlink:href="./img/svg/sprite.svg#arrow"></use></svg>
+      </button>
+      <button class="btn-slr next" aria-label="кнопка слайдера следующий"><svg class="">
+        <use xlink:href="./img/svg/sprite.svg#arrow"></use></svg>
+      </button>
+      <button class="btn-slr-page" aria-label="кнопка слайдера"></button>
+      <button class="btn-slr-page active" aria-label="кнопка слайдера"></button>
+      <input class="input" type="text" placeholder="Имя">
+      <input class="input error" type="text" value="Нужно ввести имя" title="Имя">
+      <form class="example" action="action_page.php">
+        <input class="input search" type="text" placeholder="Введите название препарата" name="search">
+        <button class="btn" type="submit" aria-label="кнопка поиска">Искать</button>
+      </form>
+      <input class="checkbox" type="checkbox" title="checkbox">
+      <span class="label doctor">Для врачей</span>
+      <span class="label pharmacist">Для фармацевтов</span>
+      <span class="label int-med">Интегративная медицина</span>
+      <span class="label webinar">Вебинар</span>
+      <span class="label recorded">Курс в записи</span>
+      <span class="label seminar">Семинар</span>
+      <span class="label online">Курс онлайн</span>
+      <dl class="accordion">
+        <dt class="accordion__term" role="button">
+          <span>Что такое онлайн-трансляция</span>
+          <svg><use xlink:href="./img/svg/sprite.svg#arrow"></use></svg>
+        </dt>
+        <dd class="accordion__desc hidden">
+          <p>Лекарственная терапия аллергических заболеваний проводится под наблюдением врача, который подберет наиболее эффективный и безопасный препарат для конкретного пациента.</p>
+          <p>Лекарственная терапия аллергических заболеваний проводится под наблюдением врача, который подберет наиболее эффективный и безопасный препарат для конкретного пациента.</p>
+        </dd>
+      </dl>
+      <dl class="accordion small">
+        <dt class="accordion__term" role="button">
+          <span>Что такое онлайн-трансляция</span>
+          <svg class=""><use xlink:href="./img/svg/sprite.svg#arrow"></use></svg>
+        </dt>
+        <dd class="accordion__desc hidden">
+          <p>Лекарственная терапия аллергических заболеваний проводится под наблюдением врача, который подберет наиболее эффективный и безопасный препарат для конкретного пациента.</p>
+          <p>Лекарственная терапия аллергических заболеваний проводится под наблюдением врача, который подберет наиболее эффективный и безопасный препарат для конкретного пациента.</p>
+        </dd>
+      </dl>
+      <dl class="accordion large">
+        <dt class="accordion__term" role="button">
+          <span>Содержание курса</span>
+          <svg class=""><use xlink:href="./img/svg/sprite.svg#arrow"></use></svg>
+        </dt>
+        <dd class="accordion__desc hidden">
+          <ul role="list">
+            <li>Вступление</li>
+            <li>Национальная ассоциация интегративной медицины</li>
+            <li>Доказательства биологического действия</li>
+            <li>Ответы на вопросы</li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="filter-box">
+        <div class="filter-item">
+          <button class="category-switch">
+            <span>Авторы</span>
+            <svg><use xlink:href="./img/svg/sprite.svg#arrow"></use></svg>
+          </button>
+          <div class="category-wrap">
+            <div class="category-inner">
+              <ul class="category-list" role="list">
+                <li><input type="checkbox" class="checkbox"><span>Иванов Иван</span></li>
+                <li><input type="checkbox" class="checkbox"><span>Константинов Констанин</span></li>
+                <li><input type="checkbox" class="checkbox"><span>Иванов Иван</span></li>
+                <li><input type="checkbox" class="checkbox"><span>Иванов Иван</span></li>
+                <li><input type="checkbox" class="checkbox"><span>Иванов Иван</span></li>
+                <li><input type="checkbox" class="checkbox"><span>Иванов Иван</span></li>
+                <li><input type="checkbox" class="checkbox"><span>Иванов Иван</span></li>
+                <li><input type="checkbox" class="checkbox"><span>Иванов Иван</span></li>
+                <li><input type="checkbox" class="checkbox"><span>Иванов Иван</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="filter-item">
+          <button class="category-switch">
+            <span>Темы</span>
+            <svg><use xlink:href="./img/svg/sprite.svg#arrow"></use></svg>
+          </button>
+          <div class="category-wrap">
+            <div class="category-inner">
+              <ul class="category-list" role="list">
+                <li><input type="checkbox" class="checkbox"><span>Основы клинической гомеопатии в педиатрии</span></li>
+                <li><input type="checkbox" class="checkbox"><span>Главное о гомеопатии</span></li>
+                <li><input type="checkbox" class="checkbox"><span>Тема 3</span></li>
+                <li><input type="checkbox" class="checkbox"><span>Тема 4</span></li>
+                <li><input type="checkbox" class="checkbox"><span>Тема 5</span></li>
+                <li><input type="checkbox" class="checkbox"><span>Тема 6</span></li>
+                <li><input type="checkbox" class="checkbox"><span>Тема 7</span></li>
+                <li><input type="checkbox" class="checkbox"><span>Тема 8</span></li>
+                <li><input type="checkbox" class="checkbox"><span>Тема 9</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="filter-item">
+          <button class="category-switch">
+            <span>Курсы</span>
+          </button>
+        </div>
+        <div class="filter-item">
+          <button class="category-switch">
+            <span>Вебинары</span>
+          </button>
+        </div>
+        <div class="filter-item">
+          <button class="category-switch">
+            <span>Семинары</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+
+</html>

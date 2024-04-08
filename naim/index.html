@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница | НАИМ</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+  <header class="header-site">
+  <div class="container top-line">
+    <a class="logo-block" href="./">
+      <div class="img">
+        <img src="./img/misc/logo-naim-onlight.png" alt="Логотип НАИМ">
+      </div>
+      <p>Национальная Ассоциация Интегративной Медицины</p>
+    </a>
+    <button class="burger">
+      <img class="burger-i" alt="img" src="./img/svg/icons/burger.svg">
+      <img class="close-i hidden" alt="img" src="./img/svg/icons/close.svg">
+      Меню
+    </button>
+  </div>
+  <div class="container menu-section">
+    <ul class="contacts" role="list">
+      <li>
+        <a href="tel:+79522545545">
+          <svg>
+            <use xlink:href="./img/svg/sprite.svg#tel"></use>
+          </svg>
+          <span>+7 952 254-55-45</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:info@naimedu.com">
+          <svg>
+            <use xlink:href="./img/svg/sprite.svg#mail"></use>
+          </svg>
+          <span>info@naimedu.com</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg>
+            <use xlink:href="./img/svg/sprite.svg#whatsapp"></use>
+          </svg>
+          <span>Whatsapp</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg>
+            <use xlink:href="./img/svg/sprite.svg#telegram"></use>
+          </svg>
+          <span>Telegram</span>
+        </a>
+      </li>
+    </ul>
+    <nav class="menu-prim">
+      <ul class="menu-list" role="list">
+        <li class="menu-item">
+          <a class="menu-txt" href="./about.html"><span>Об ассоциации</span></a>
+          <ul class="menu-sub" role="list">
+            <!-- <li class="menu-item"><a class="menu-txt" href="./mission.html"><span>Миссия и задачи</span></a></li> -->
+            <li class="menu-item"><a class="menu-txt" href="./ustav.html"><span>Устав ассоциации</span></a></li>
+            <li class="menu-item"><a class="menu-txt" href="./structure.html"><span>Структура</span></a></li>
+            <li class="menu-item"><a class="menu-txt" href="./documents.html"><span>Документы</span></a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a class="menu-txt" href="./membership.html"><span>Членство</span></a>
+          <ul class="menu-sub" role="list">
+            <li class="menu-item"><a class="menu-txt" href="./membership-benefits.html"><span>Преимущество членства</span></a></li>
+            <!-- <li class="menu-item"><a class="menu-txt" href="org-join.html"><span>Вступление в ассоциацию</span></a></li>
+            <li class="menu-item"><a class="menu-txt" href="./membership-statement.html"><span>Положение о членстве</span></a></li>
+            <li class="menu-item"><a class="menu-txt" href="./membership.renewal.html"><span>Продление членства</span></a></li> -->
+          </ul>
+        </li>
+        <li class="menu-item"><a class="menu-txt" href="./news.html"><span>Новости</span></a>
+          <ul class="menu-sub" role="list">
+            <li class="menu-item"><a class="menu-txt" href="./news-single.html"><span>Новость</span></a></li>
+            <li class="menu-item"><a class="menu-txt" href="./course.html"><span>Курс учебный</span></a></li>
+            <li class="menu-item"><a class="menu-txt" href="./404.html"><span>404</span></a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a class="menu-txt" href="./partners.html"><span>Партнеры</span></a></li>
+        <li class="menu-item">
+          <a class="menu-txt" href="./recommendations.html"><span>Рекомендации</span></a>
+          <ul class="menu-sub" role="list">
+            <li class="menu-item"><a class="menu-txt" href="./drugs.html"><span>Препараты</span></a></li>
+            <li class="menu-item"><a class="menu-txt" href="./books.html"><span>Литература</span></a></li>
+            <li class="menu-item"><a class="menu-txt" href="./medcenters.html"><span>Медицинские центры</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="account">
+      <a href="./training.html" class="btn btn--red">
+        <svg>
+          <use xlink:href="./img/svg/sprite.svg#book"></use>
+        </svg>
+        <span>Обучение</span>
+      </a>
+      <a href="#" class="btn btn--test">
+        <svg>
+          <use xlink:href="./img/svg/sprite.svg#key"></use>
+        </svg>
+        <span>Личный кабинет</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+  <main class="main">
+    <div class="splide slider-main" aria-label="Splide Basic HTML Example">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide slide slide--01">
+        <a href="#" aria-label="Ссылка на курс"></a>
+        <div class="container">
+          <h1>Национальная Ассоциация <br>Интегративной Медицины (НАИМ)</h1>
+          <h4>Объединение профессионалов медицинского сообщества</h4>
+        </div>
+
+      </li>
+      <li class="splide__slide slide slide--02">
+        <a href="#" aria-label="Ссылка на курс"></a>
+        <div class="container">
+          <h2>Доказательства биологического действия <br>гомеопатических препаратов (Аспирин)</h2>
+          <h4>Национальная ассоциация интегративной медицины</h4>
+        </div>
+      </li>
+      <li class="splide__slide slide slide--03">
+        <a href="#" aria-label="Ссылка на курс"></a>
+        <div class="container">
+          <h2>Как проверяются и регистрируются <br>гомеопатические препараты в России?</h2>
+          <h4>Национальная ассоциация интегративной медицины</h4>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="container">
+      <div class="org-benefits">
+  <header>
+    <h2>Что дает Ассоциация?</h2>
+    <h4>Становитесь членом Ассоциации и получайте уникальные преференции</h4>
+  </header>
+  <ul class="advantages" role="list">
+    <li class="advantages__item">
+      <div class="img"><img src="./img/icons/tribune.png" alt="Трибуна"></div>
+      <p class="subtitle">Участие в особых мероприятиях</p>
+    </li>
+    <li class="advantages__item">
+      <div class="img"><img src="./img/icons/book-stack.png" alt="Стопка книг"></div>
+      <p class="subtitle">Скидки на обучение</p>
+    </li>
+    <li class="advantages__item">
+      <div class="img"><img src="./img/icons/notes.png" alt="Записи"></div>
+      <p class="subtitle">Продвижение ваших публикаций</p>
+    </li>
+    <li class="advantages__item">
+      <div class="img"><img src="./img/icons/communication.png" alt="Коммуникация"></div>
+      <p class="subtitle">Общение с профессионалами</p>
+    </li>
+  </ul>
+  <div class="desc">
+    <p>За последние годы кинезиотейпирование превратилось в универсальный метод физиотерапии, а его применение уже давно вышло за рамки профессионального спорта. Тейпы для кинезиотейпирования активно используют в восстановительной терапии, ортопедии и косметологии.
+      Неудивительно, что такая быстрорастущая популярность «разноцветного пластыря» привела к появлению множества мифов, которые не имеют отношение к реальности.</p>
+    <button class="btn btn--red btn--modal">вступить в ассоциацию</button>
+  </div>
+</div>
+
+      <section class="card-train-section">
+        <h2>Курсы в записи и онлайн</h2>
+        <div class="card-train-block auto-grid">
+  <div class="card-train">
+    <div class="card-top">
+      <div class="img">
+        <a href="#"><img src="./img/train-pics/train-pic-1.jpg" alt="Фото для тренинга"></a>
+      </div>
+      <div class="labels">
+        <span class="label online">Курс онлайн</span>
+        <span class="label doctor">Для врачей</span>
+      </div>
+      <div class="info"><span>Старт курса:</span><span>Октябрь 2023</span></div>
+      <div class="badge">
+        <img src="./img/badges/badge-1.png" alt="Значок для тренинга">
+      </div>
+    </div>
+    <div class="card-bottom">
+      <div>
+        <div class="meta">Сертификат гос.образца</div>
+        <h3>Основы клинической гомеопатии в педиатрии</h3>
+        <p class="desc">Курс повышения квалификации на базе Кафедры Поликлинической педиатрии УГМУ, г. Екатеринбург (ФГБОУ ВО УГМУ Минздрава РФ), 36 часов.</p>
+      </div>
+      <div class="price-block">
+        <p class="price">3000 ₽</p>
+        <div class="train-type small">Онлайн курс</div>
+        <button class="btn">Подробнее</button>
+      </div>
+    </div>
+  </div>
+  <div class="card-train">
+    <div class="card-top">
+      <div class="img">
+        <a href="#"><img src="./img/train-pics/train-pic-1.jpg" alt="Фото для тренинга"></a>
+      </div>
+      <div class="labels">
+        <span class="label recorded">Курс в записи</span>
+        <span class="label int-med">Интегративная медицина</span>
+      </div>
+      <div class="info"><span>Записи курса:</span><span>Апрель 2023</span></div>
+      <div class="badge">
+        <img src="./img/badges/badge-1.png" alt="Значок для тренинга">
+      </div>
+    </div>
+    <div class="card-bottom">
+      <div>
+        <div class="meta">Сертификат от НАИМ</div>
+        <h3>Основы клинической гомеопатии в педиатрии</h3>
+        <p class="desc">Курс повышения квалификации на базе Кафедры Поликлинической педиатрии УГМУ, г. Екатеринбург (ФГБОУ ВО УГМУ Минздрава РФ), 36 часов.</p>
+      </div>
+      <div class="price-block">
+        <p class="price">3000 ₽</p>
+        <div class="train-type small">Курс в записи</div>
+        <button class="btn">Подробнее</button>
+      </div>
+    </div>
+  </div>
+  <div class="card-train">
+    <div class="card-top">
+      <div class="img">
+        <a href="#"><img src="./img/train-pics/train-pic-1.jpg" alt="Фото для тренинга"></a>
+      </div>
+      <div class="labels">
+        <span class="label online">Курс онлайн</span>
+        <span class="label pharmacist">Для фармацевтов</span>
+      </div>
+      <div class="info"><span>Старт курса:</span><span>Октябрь 2023</span></div>
+      <div class="badge">
+        <img src="./img/badges/badge-1.png" alt="Значок для тренинга">
+      </div>
+    </div>
+    <div class="card-bottom">
+      <div>
+        <div class="meta">Сертификат гос.образца</div>
+        <h3>Основы клинической гомеопатии в педиатрии</h3>
+        <p class="desc">Курс повышения квалификации на базе Кафедры Поликлинической педиатрии УГМУ, г. Екатеринбург (ФГБОУ ВО УГМУ Минздрава РФ), 36 часов.</p>
+      </div>
+      <div class="price-block">
+        <p class="price">3000 ₽</p>
+        <div class="train-type small">Онлайн курс</div>
+        <button class="btn">Подробнее</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <a href="#" class="btn btn--ghost">Все курсы</a>
+      </section>
+      <section class="card-train-section">
+        <h2>Практические семинары и вебинары в записи</h2>
+        <div class="card-train-block auto-grid">
+  <div class="card-train">
+    <div class="card-top">
+      <div class="img">
+        <a href="#"><img src="./img/train-pics/train-pic-2.jpg" alt="Фото для тренинга"></a>
+      </div>
+      <div class="labels">
+        <span class="label seminar">Семинар</span>
+        <span class="label doctor">Для врачей</span>
+      </div>
+      <div class="info"><span>Спикер:</span><span>Юренева-Тхоржевская Т.В</span></div>
+      <div class="badge">
+        <img src="./img/badges/badge-2.png" alt="Значок для тренинга">
+      </div>
+    </div>
+    <div class="card-bottom">
+      <div>
+        <div class="meta">Время просмотра: 39 мин.</div>
+        <h3>Возможности современной гомеопатии</h3>
+        <p class="desc">Записи Практических онлайн- семинаров с клиническими задачами и разбором применяемых в лечение протоколов по монопрепаратам.</p>
+      </div>
+      <div class="price-block">
+        <p class="price">500 ₽</p>
+        <div class="train-type small">Семинар в записи</div>
+        <button class="btn">приобрести</button>
+      </div>
+    </div>
+  </div>
+  <div class="card-train">
+    <div class="card-top">
+      <div class="img">
+        <a href="#"><img src="./img/train-pics/train-pic-3.jpg" alt="Фото для тренинга"></a>
+      </div>
+      <div class="labels">
+        <span class="label webinar">Вебинар</span>
+        <span class="label int-med">Интегративная медицина</span>
+      </div>
+      <div class="info"><span>Спикер:</span><span>Юренева-Тхоржевская Т.В</span></div>
+      <div class="badge">
+        <img src="./img/badges/badge-2.png" alt="Значок для тренинга">
+      </div>
+    </div>
+    <div class="card-bottom">
+      <div>
+        <div class="meta">Время просмотра: 39 мин.</div>
+        <h3>Протоколы ведения детей с ФГИН ЖКТ с использованием гомеопатического метода</h3>
+        <p class="desc"></p>
+      </div>
+      <div class="price-block">
+        <p class="price">500 ₽</p>
+        <div class="train-type small">Вебинар в записи</div>
+        <button class="btn">приобрести</button>
+      </div>
+    </div>
+  </div>
+  <div class="card-train">
+    <div class="card-top">
+      <div class="img">
+        <a href="#"><img src="./img/train-pics/train-pic-2.jpg" alt="Фото для тренинга"></a>
+      </div>
+      <div class="labels">
+        <span class="label seminar">Семинар</span>
+        <span class="label pharmacist">Для фармацевтов</span>
+      </div>
+      <div class="info"><span>Спикер:</span><span>Юренева-Тхоржевская Т.В</span></div>
+      <div class="badge">
+        <img src="./img/badges/badge-2.png" alt="Значок для тренинга">
+      </div>
+    </div>
+    <div class="card-bottom">
+      <div>
+        <div class="meta">Время просмотра: 39 мин.</div>
+        <h3>Возможности современной гомеопатии</h3>
+        <p class="desc">Записи Практических онлайн- семинаров с клиническими задачами и разбором применяемых в лечение протоколов по монопрепаратам.</p>
+      </div>
+      <div class="price-block">
+        <p class="price">500 ₽</p>
+        <div class="train-type small">Семинар в записи</div>
+        <button class="btn">приобрести</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+        <a href="#" class="btn btn--ghost">все материалы</a>
+      </section>
+      <section class="card-study-section">
+        <h2>Направления обучения</h2>
+        <div class="card-study-block auto-grid">
+  <div class="card-study">
+    <h3>Для врачей и <br>сотрудников <br>больниц</h3>
+    <div class="img">
+      <a href="./training-doctor.html"><img src="./img/study-pics/study-doctor.jpg" alt="Врач"></a>
+    </div>
+  </div>
+  <div class="card-study">
+    <h3>Для фармацевтов <br>и работников <br>аптек</h3>
+    <div class="img">
+      <a href="#"><img src="./img/study-pics/study-pharmacist.jpg" alt="Фармацевт"></a>
+    </div>
+  </div>
+  <div class="card-study">
+    <h3>Для специалистов <br>интегративной <br>медицины</h3>
+    <div class="img">
+      <a href="#"><img src="./img/study-pics/study-specialist.jpg" alt="Специалист"></a>
+    </div>
+  </div>
+</div>
+
+      </section>
+      <section class="recomendation-section">
+        <h2>Рекомендации</h2>
+        <div class="tabs-block">
+  <div class="tablist" role="tablist" aria-label="Табы">
+    <button class="tab" role="tab" aria-controls="drugs" id="tab-1">Препараты</button>
+    <button class="tab" role="tab" aria-controls="books" id="tab-2">Книги</button>
+    <button class="tab" role="tab" aria-controls="medcenters" id="tab-3">Медцентры</button>
+  </div>
+  <div class="tabpanel" role="tabpanel" aria-labelledby="tab-1" id="drugs">
+    <div class="card-drug-block auto-grid">
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/ferrum-fosforicum-c9.jpg" alt="Феррум Фосфорикум C9">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Феррум Фосфорикум C9</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/akonitum-napellus-c30.jpg" alt="Аконитум Напеллус С30">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Аконитум Напеллус С30</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/rus-toxicodendron-c9.jpg" alt="Рус Токсикодендрон С9">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Рус Токсикодендрон С9</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/belladonna-c9.jpg" alt="Белладонна С9">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Белладонна С9</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/gelzemium-c30.jpg" alt="Гельземиум С30">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Гельземиум С30</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/ferrum-fosforicum-c9.jpg" alt="Феррум Фосфорикум C9">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Феррум Фосфорикум C9</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+</div>
+
+    <a href="#" class="btn">Все препараты</a>
+  </div>
+  <div class="tabpanel" role="tabpanel" aria-labelledby="tab-2" id="books">
+    <div class="card-book-block auto-grid">
+  <div class="card-book">
+    <div class="img">
+      <img src="./img/books/epidemiologija.jpg" alt="Эпидемиология">
+    </div>
+    <div class="content">
+      <p class="author small">Автор: <span class="name">Н. И. Брико, В. И. Покровский</span></p>
+      <h4>Эпидемиология</h4>
+      <p class="desc">Членами Ассоциации могут быть специалисты, профессионально занимающиеся деятельностью в области медицины, достигшие 18-летнего возраста, имеющие высшее профессиональное образование, признающие Устав ассоциации, соблюдающие правила профессиональной
+        этики.
+      </p>
+      <p class="price">680 ₽</p>
+      <a href="./book.html" class="btn">Купить книгу</a>
+    </div>
+  </div>
+  <div class="card-book">
+    <div class="img">
+      <img src="./img/books/gomeopatija.jpg" alt="Гомеопатия">
+    </div>
+    <div class="content">
+      <p class="author small">Автор: <span class="name">Татьяна Колотова</span></p>
+      <h4>Гомеопатия и не только</h4>
+      <p class="desc">Членами Ассоциации могут быть специалисты, профессионально занимающиеся деятельностью в области медицины, достигшие 18-летнего возраста, имеющие высшее профессиональное образование, признающие Устав ассоциации, соблюдающие правила профессиональной
+        этики.
+      </p>
+      <p class="price">680 ₽</p>
+      <a href="./book.html" class="btn">Купить книгу</a>
+    </div>
+  </div>
+  <div class="card-book">
+    <div class="img">
+      <img src="./img/books/gomeopatija-guide.jpg" alt="Гомеопатия">
+    </div>
+    <div class="content">
+      <p class="author small">Автор: <span class="name">А. Фон Гергардт</span></p>
+      <h4>Гомеопатия</h4>
+      <p class="desc">Практическое руководство</p>
+      <p class="price">680 ₽</p>
+      <a href="./book.html" class="btn">Купить книгу</a>
+    </div>
+  </div>
+  <div class="card-book">
+    <div class="img">
+      <img src="./img/books/gomeopatija.jpg" alt="Гомеопатия">
+    </div>
+    <div class="content">
+      <p class="author small">Автор: <span class="name">Татьяна Колотова</span></p>
+      <h4>Гомеопатия и не только</h4>
+      <p class="desc">Членами Ассоциации могут быть специалисты, профессионально занимающиеся деятельностью в области медицины, достигшие 18-летнего возраста, имеющие высшее профессиональное образование, признающие Устав ассоциации, соблюдающие правила профессиональной
+        этики.
+      </p>
+      <p class="price">680 ₽</p>
+      <a href="./book.html" class="btn">Купить книгу</a>
+    </div>
+  </div>
+</div>
+
+    <a href="#" class="btn">Все книги</a>
+  </div>
+  <div class="tabpanel" role="tabpanel" aria-labelledby="tab-3" id="medcenters">
+    <div class="card-medcenter-block auto-grid">
+  <div class="card-medcenter">
+    <div class="img">
+      <img src="./img/medcenters/arsmedika.jpg" alt="Арсмедика">
+      <div class="badge">
+        <img src="./img/badges/arsmedika.jpg" alt="Арсмедика">
+      </div>
+    </div>
+    <div class="content">
+      <h4>Арсмедика</h4>
+      <p class="category">Медцентр, клиника, анализы</p>
+      <address>г. Ростов-на-Дону, ул. Краснодарская, д. 33 (1, 2 этажи)</address>
+      <div class="hours">График работы: Пн-Сб, 8.00-20.00</div>
+      <a href="#" class="btn btn--ghost">Сайт центра</a>
+    </div>
+  </div>
+  <div class="card-medcenter">
+    <div class="img">
+      <img src="./img/medcenters/horosh-poliklinika.jpg" alt="Хорошая поликлиника">
+      <div class="badge">
+        <img src="./img/badges/horosh-poliklinika.jpg" alt="Хорошая поликлиника">
+      </div>
+    </div>
+    <div class="content">
+      <h4>Хорошая поликлиника</h4>
+      <p class="category">Медцентр, клиника, анализы</p>
+      <address>г. Ростов-на-Дону, ул. Краснодарская, д. 33 (1, 2 этажи)</address>
+      <div class="hours">График работы: Пн-Сб, 8.00-20.00</div>
+      <a href="#" class="btn btn--ghost">Сайт центра</a>
+    </div>
+  </div>
+  <div class="card-medcenter">
+    <div class="img">
+      <img src="./img/medcenters/aprel.jpg" alt="Апрель">
+      <div class="badge">
+        <img src="./img/badges/aprel.jpg" alt="Апрель">
+      </div>
+    </div>
+    <div class="content">
+      <h4>Апрель</h4>
+      <p class="category">Медцентр, клиника, анализы</p>
+      <address>г. Ростов-на-Дону, ул. Краснодарская, д. 33 (1, 2 этажи)</address>
+      <div class="hours">График работы: Пн-Сб, 8.00-20.00</div>
+      <a href="#" class="btn btn--ghost">Сайт центра</a>
+    </div>
+  </div>
+  <div class="card-medcenter">
+    <div class="img">
+      <img src="./img/medcenters/prognoz.jpg" alt="Прогноз">
+      <div class="badge">
+        <img src="./img/badges/prognoz.jpg" alt="Прогноз">
+      </div>
+    </div>
+    <div class="content">
+      <h4>Прогноз</h4>
+      <p class="category">Медцентр, клиника, анализы</p>
+      <address>г. Ростов-на-Дону, ул. Краснодарская, д. 33 (1, 2 этажи)</address>
+      <div class="hours">График работы: Пн-Сб, 8.00-20.00</div>
+      <a href="#" class="btn btn--ghost">Сайт центра</a>
+    </div>
+  </div>
+</div>
+
+    <a href="#" class="btn">Все медцентры</a>
+  </div>
+</div>
+
+      </section>
+    </div>
+  </main>
+  <footer class="footer-site">
+  <div class="container">
+    <div class="footer-site__top">
+      <div class="brand">
+        <div class="img"><img src="./img/misc/logo-naim-ondark.png" alt="Логотип НАИМ"></div>
+        <p class="small copyright">© 2023. Все права <br>защищены</p>
+      </div>
+      <div class="menu-section association">
+        <p class="name bold"><a href="./about.html">Ассоциация</a></p>
+        <ul class="menu" role="list">
+          <li class="menu__item"><a href="#">Миссия и задачи</a></li>
+          <li class="menu__item"><a href="#">Устав ассоциации</a></li>
+          <li class="menu__item"><a href="./documents.html">Документы</a></li>
+          <li class="menu__item"><a href="./structure.html">Структура</a></li>
+        </ul>
+      </div>
+      <div class="menu-section membership">
+        <p class="name bold"><a href="./membership.html">Членство</a></p>
+        <ul class="menu" role="list">
+          <li class="menu__item"><a href="#">Положение о членстве</a></li>
+          <li class="menu__item"><a href="#">Вступление в ассоциацию</a></li>
+          <li class="menu__item"><a href="#">Продление членства</a></li>
+          <li class="menu__item"><a href="#">Вопросы-ответы</a></li>
+        </ul>
+      </div>
+      <div class="menu-section learning">
+        <p class="name bold"><a href="./training.html">Обучение</a></p>
+        <ul class="menu" role="list">
+          <li class="menu__item"><a href="#">Вебинары</a></li>
+          <li class="menu__item"><a href="#">Курсы</a></li>
+          <li class="menu__item"><a href="./training-doctor.html">Для врачей</a></li>
+          <li class="menu__item"><a href="#">Для работников аптек</a></li>
+          <li class="menu__item"><a href="#">Для интегральной медицины</a></li>
+        </ul>
+      </div>
+      <div class="menu-section info">
+        <p class="name bold">Информация</p>
+        <ul class="menu" role="list">
+          <li class="menu__item"><a href="./news.html">Новости</a></li>
+          <li class="menu__item"><a href="./partners.html">Партнеры</a></li>
+          <li class="menu__item"><a href="./drugs.html">Препараты</a></li>
+          <li class="menu__item"><a href="./books.html">Книги</a></li>
+          <li class="menu__item"><a href="./contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-site__bottom">
+      <a class="tel" href="tel:+79522545545">
+        <svg class="">
+            <use xlink:href="./img/svg/sprite.svg#tel"></use>
+          </svg> +7 952 254-55-45
+      </a>
+      <a class="email" href="mailto:info@naimedu.com">
+        <svg class="">
+          <use xlink:href="./img/svg/sprite.svg#mail"></use>
+        </svg>info@naimedu.com
+      </a>
+      <a class="small agreem" href="#">Пользовательское соглашение</a>
+      <a class="small conf" href="./ustav.html">Политика конфиденциальности</a>
+      <!-- <a class="small dev" href="https://bearlogics.ru/"><span>Разработка сайта</span>
+        <svg class="">
+          <use xlink:href="./img/svg/sprite.svg#logo-bearlogics"></use>
+        </svg>
+      </a> -->
+    </div>
+  </div>
+</footer>
+
+  <dialog class="form-modal-wrap">
+    <div class="form-modal">
+      <div class="contacts-form-join">
+        <h3>Вступить в Ассоциацию НАИМ</h3>
+        <p class="small">После заполнения контактных данных, вы будете перенаправлены на систему оплаты. После оплаты на вашу почту придет доступ к обучению.</p>
+        <form class="form">
+          <input class="input name" type="text" placeholder="Ваше имя*">
+          <input class="input email" type="email" placeholder="E-mail*">
+          <input class="input tel" type="tel" id="tel" placeholder="+7 (___) ___ - __ - __">
+          <h4><span>Стоимость услуги:</span> <span>5000 руб.</span></h4>
+          <p class="agreement">Я соглашаюсь с <a href="#">Политикой конфиденциальности</a></p>
+          <button type="submit" class="btn">Отправить</button>
+        </form>
+      </div>
+      <img class="btn--close" src="./img/svg/icons/close.svg">
+    </div>
+  </dialog>
+  <dialog class="test-modal-wrap">
+    <div class="test-modal">
+      <div class="top">
+        <div class="logo-block">
+          <div class="img">
+            <img src="./img/misc/logo-naim-onlight.png" alt="Логотип НАИМ">
+          </div>
+          <p>Национальная Ассоциация <br>Интегративной Медицины</p>
+        </div>
+        <img class="btn--close-test" src="./img/svg/icons/close-dark.svg" alt="Кнопка Закрыть">
+      </div>
+      <div class="mid">
+        <p>Этот раздел сайта содержит информацию о лекарственных препаратах, отпускаемых по рецепту.</p>
+        <p>Согласно действующему законодательству, материалы этого раздела могут быть доступны только для медицинских и фармацевтических работников.</p>
+        <p>Вы являетесь медицинским или фармацевтическим работником и согласны с данным утверждением?</p>
+      </div>
+      <div class="bottom">
+        <button class="btn">Да</button>
+        <button class="btn btn--ghost">Нет</button>
+      </div>
+    </div>
+  </dialog>
+</body>
+
+</html>

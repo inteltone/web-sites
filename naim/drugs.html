@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Препараты | НАИМ</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+  <header class="header-site">
+  <div class="container top-line">
+    <a class="logo-block" href="./">
+      <div class="img">
+        <img src="./img/misc/logo-naim-onlight.png" alt="Логотип НАИМ">
+      </div>
+      <p>Национальная Ассоциация Интегративной Медицины</p>
+    </a>
+    <button class="burger">
+      <img class="burger-i" alt="img" src="./img/svg/icons/burger.svg">
+      <img class="close-i hidden" alt="img" src="./img/svg/icons/close.svg">
+      Меню
+    </button>
+  </div>
+  <div class="container menu-section">
+    <ul class="contacts" role="list">
+      <li>
+        <a href="tel:+79522545545">
+          <svg>
+            <use xlink:href="./img/svg/sprite.svg#tel"></use>
+          </svg>
+          <span>+7 952 254-55-45</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:info@naimedu.com">
+          <svg>
+            <use xlink:href="./img/svg/sprite.svg#mail"></use>
+          </svg>
+          <span>info@naimedu.com</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg>
+            <use xlink:href="./img/svg/sprite.svg#whatsapp"></use>
+          </svg>
+          <span>Whatsapp</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg>
+            <use xlink:href="./img/svg/sprite.svg#telegram"></use>
+          </svg>
+          <span>Telegram</span>
+        </a>
+      </li>
+    </ul>
+    <nav class="menu-prim">
+      <ul class="menu-list" role="list">
+        <li class="menu-item">
+          <a class="menu-txt" href="./about.html"><span>Об ассоциации</span></a>
+          <ul class="menu-sub" role="list">
+            <!-- <li class="menu-item"><a class="menu-txt" href="./mission.html"><span>Миссия и задачи</span></a></li> -->
+            <li class="menu-item"><a class="menu-txt" href="./ustav.html"><span>Устав ассоциации</span></a></li>
+            <li class="menu-item"><a class="menu-txt" href="./structure.html"><span>Структура</span></a></li>
+            <li class="menu-item"><a class="menu-txt" href="./documents.html"><span>Документы</span></a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a class="menu-txt" href="./membership.html"><span>Членство</span></a>
+          <ul class="menu-sub" role="list">
+            <li class="menu-item"><a class="menu-txt" href="./membership-benefits.html"><span>Преимущество членства</span></a></li>
+            <!-- <li class="menu-item"><a class="menu-txt" href="org-join.html"><span>Вступление в ассоциацию</span></a></li>
+            <li class="menu-item"><a class="menu-txt" href="./membership-statement.html"><span>Положение о членстве</span></a></li>
+            <li class="menu-item"><a class="menu-txt" href="./membership.renewal.html"><span>Продление членства</span></a></li> -->
+          </ul>
+        </li>
+        <li class="menu-item"><a class="menu-txt" href="./news.html"><span>Новости</span></a>
+          <ul class="menu-sub" role="list">
+            <li class="menu-item"><a class="menu-txt" href="./news-single.html"><span>Новость</span></a></li>
+            <li class="menu-item"><a class="menu-txt" href="./course.html"><span>Курс учебный</span></a></li>
+            <li class="menu-item"><a class="menu-txt" href="./404.html"><span>404</span></a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a class="menu-txt" href="./partners.html"><span>Партнеры</span></a></li>
+        <li class="menu-item">
+          <a class="menu-txt" href="./recommendations.html"><span>Рекомендации</span></a>
+          <ul class="menu-sub" role="list">
+            <li class="menu-item"><a class="menu-txt" href="./drugs.html"><span>Препараты</span></a></li>
+            <li class="menu-item"><a class="menu-txt" href="./books.html"><span>Литература</span></a></li>
+            <li class="menu-item"><a class="menu-txt" href="./medcenters.html"><span>Медицинские центры</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="account">
+      <a href="./training.html" class="btn btn--red">
+        <svg>
+          <use xlink:href="./img/svg/sprite.svg#book"></use>
+        </svg>
+        <span>Обучение</span>
+      </a>
+      <a href="#" class="btn btn--test">
+        <svg>
+          <use xlink:href="./img/svg/sprite.svg#key"></use>
+        </svg>
+        <span>Личный кабинет</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+  <main class="main">
+
+    <div class="container">
+      <ul class="breadcrambs dark" role="list">
+        <li><a href="/">Главная</a></li>
+        <li><a href="./recommendations.html">Рекомендации</a></li>
+        <li>Препараты</li>
+      </ul>
+      <header class="header-block">
+        <h1>Препараты</h1>
+        <div class="search-block">
+          <input class="input search" type="text" placeholder="Введите название препарата" name="search">
+          <button class="btn" type="submit" aria-label="кнопка поиска">Искать</button>
+        </div>
+      </header>
+      <div class="card-drug-block auto-grid">
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/ferrum-fosforicum-c9.jpg" alt="Феррум Фосфорикум C9">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Феррум Фосфорикум C9</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/akonitum-napellus-c30.jpg" alt="Аконитум Напеллус С30">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Аконитум Напеллус С30</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/rus-toxicodendron-c9.jpg" alt="Рус Токсикодендрон С9">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Рус Токсикодендрон С9</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/belladonna-c9.jpg" alt="Белладонна С9">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Белладонна С9</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/gelzemium-c30.jpg" alt="Гельземиум С30">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Гельземиум С30</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/ferrum-fosforicum-c9.jpg" alt="Феррум Фосфорикум C9">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Феррум Фосфорикум C9</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/ferrum-fosforicum-c9.jpg" alt="Феррум Фосфорикум C9">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Феррум Фосфорикум C9</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/akonitum-napellus-c30.jpg" alt="Аконитум Напеллус С30">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Аконитум Напеллус С30</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/rus-toxicodendron-c9.jpg" alt="Рус Токсикодендрон С9">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Рус Токсикодендрон С9</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/belladonna-c9.jpg" alt="Белладонна С9">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Белладонна С9</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/gelzemium-c30.jpg" alt="Гельземиум С30">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Гельземиум С30</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/ferrum-fosforicum-c9.jpg" alt="Феррум Фосфорикум C9">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Феррум Фосфорикум C9</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/ferrum-fosforicum-c9.jpg" alt="Феррум Фосфорикум C9">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Феррум Фосфорикум C9</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/akonitum-napellus-c30.jpg" alt="Аконитум Напеллус С30">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Аконитум Напеллус С30</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/rus-toxicodendron-c9.jpg" alt="Рус Токсикодендрон С9">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Рус Токсикодендрон С9</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/belladonna-c9.jpg" alt="Белладонна С9">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Белладонна С9</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/gelzemium-c30.jpg" alt="Гельземиум С30">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Гельземиум С30</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+  <div class="card-drug">
+    <div class="img">
+      <img src="./img/drugs/ferrum-fosforicum-c9.jpg" alt="Феррум Фосфорикум C9">
+    </div>
+    <div class="logo">
+      <img src="./img/drug-logos/boiron.jpg" alt="boiron">
+    </div>
+    <p class="name subtitle">Феррум Фосфорикум C9</p>
+    <a href="#">Инструкция</a>
+    <button class="btn btn--ghost">В аптеку</button>
+  </div>
+</div>
+ <div class="org-benefits">
+  <header>
+    <h2>Что дает Ассоциация?</h2>
+    <h4>Становитесь членом Ассоциации и получайте уникальные преференции</h4>
+  </header>
+  <ul class="advantages" role="list">
+    <li class="advantages__item">
+      <div class="img"><img src="./img/icons/tribune.png" alt="Трибуна"></div>
+      <p class="subtitle">Участие в особых мероприятиях</p>
+    </li>
+    <li class="advantages__item">
+      <div class="img"><img src="./img/icons/book-stack.png" alt="Стопка книг"></div>
+      <p class="subtitle">Скидки на обучение</p>
+    </li>
+    <li class="advantages__item">
+      <div class="img"><img src="./img/icons/notes.png" alt="Записи"></div>
+      <p class="subtitle">Продвижение ваших публикаций</p>
+    </li>
+    <li class="advantages__item">
+      <div class="img"><img src="./img/icons/communication.png" alt="Коммуникация"></div>
+      <p class="subtitle">Общение с профессионалами</p>
+    </li>
+  </ul>
+  <div class="desc">
+    <p>За последние годы кинезиотейпирование превратилось в универсальный метод физиотерапии, а его применение уже давно вышло за рамки профессионального спорта. Тейпы для кинезиотейпирования активно используют в восстановительной терапии, ортопедии и косметологии.
+      Неудивительно, что такая быстрорастущая популярность «разноцветного пластыря» привела к появлению множества мифов, которые не имеют отношение к реальности.</p>
+    <button class="btn btn--red btn--modal">вступить в ассоциацию</button>
+  </div>
+</div>
+
+    </div>
+  </main>
+  <footer class="footer-site">
+  <div class="container">
+    <div class="footer-site__top">
+      <div class="brand">
+        <div class="img"><img src="./img/misc/logo-naim-ondark.png" alt="Логотип НАИМ"></div>
+        <p class="small copyright">© 2023. Все права <br>защищены</p>
+      </div>
+      <div class="menu-section association">
+        <p class="name bold"><a href="./about.html">Ассоциация</a></p>
+        <ul class="menu" role="list">
+          <li class="menu__item"><a href="#">Миссия и задачи</a></li>
+          <li class="menu__item"><a href="#">Устав ассоциации</a></li>
+          <li class="menu__item"><a href="./documents.html">Документы</a></li>
+          <li class="menu__item"><a href="./structure.html">Структура</a></li>
+        </ul>
+      </div>
+      <div class="menu-section membership">
+        <p class="name bold"><a href="./membership.html">Членство</a></p>
+        <ul class="menu" role="list">
+          <li class="menu__item"><a href="#">Положение о членстве</a></li>
+          <li class="menu__item"><a href="#">Вступление в ассоциацию</a></li>
+          <li class="menu__item"><a href="#">Продление членства</a></li>
+          <li class="menu__item"><a href="#">Вопросы-ответы</a></li>
+        </ul>
+      </div>
+      <div class="menu-section learning">
+        <p class="name bold"><a href="./training.html">Обучение</a></p>
+        <ul class="menu" role="list">
+          <li class="menu__item"><a href="#">Вебинары</a></li>
+          <li class="menu__item"><a href="#">Курсы</a></li>
+          <li class="menu__item"><a href="./training-doctor.html">Для врачей</a></li>
+          <li class="menu__item"><a href="#">Для работников аптек</a></li>
+          <li class="menu__item"><a href="#">Для интегральной медицины</a></li>
+        </ul>
+      </div>
+      <div class="menu-section info">
+        <p class="name bold">Информация</p>
+        <ul class="menu" role="list">
+          <li class="menu__item"><a href="./news.html">Новости</a></li>
+          <li class="menu__item"><a href="./partners.html">Партнеры</a></li>
+          <li class="menu__item"><a href="./drugs.html">Препараты</a></li>
+          <li class="menu__item"><a href="./books.html">Книги</a></li>
+          <li class="menu__item"><a href="./contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-site__bottom">
+      <a class="tel" href="tel:+79522545545">
+        <svg class="">
+            <use xlink:href="./img/svg/sprite.svg#tel"></use>
+          </svg> +7 952 254-55-45
+      </a>
+      <a class="email" href="mailto:info@naimedu.com">
+        <svg class="">
+          <use xlink:href="./img/svg/sprite.svg#mail"></use>
+        </svg>info@naimedu.com
+      </a>
+      <a class="small agreem" href="#">Пользовательское соглашение</a>
+      <a class="small conf" href="./ustav.html">Политика конфиденциальности</a>
+      <!-- <a class="small dev" href="https://bearlogics.ru/"><span>Разработка сайта</span>
+        <svg class="">
+          <use xlink:href="./img/svg/sprite.svg#logo-bearlogics"></use>
+        </svg>
+      </a> -->
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
