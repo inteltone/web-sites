@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформление заказа | магазин «Папина Лавка»</title>
+  <meta name="description" content="Компания “Папина лавка” это натуральные деревенские продукты с доставкой по Воронежу. Свежая продукция и натуральный состав. Без химии и ГМО." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/main.js"></script>
+  <link rel="icon" type="image/png" href="./favicon.png" />
+</head>
+
+<body>
+  <header class="header">
+  <div class="header__top">
+    <div class="header__mainlinks">
+      <button class="header__mainlinks-item catal">
+        <i class="icon-catalog"></i>
+        <i class="icon-arrow hidden"></i>
+        <span class="text">Каталог</span>
+      </button>
+      <button class="header__mainlinks-item deliv">
+        <i class="icon-car"></i>
+        <!-- <i class="icon-arrow hidden"></i> -->
+        <span class="text">Ближайшие поставки</span>
+      </button>
+    </div>
+    <nav class="header__nav">
+      <a class="header__nav-item" href=""><span>О нас</span></a>
+      <a class="header__nav-item" href=""><span>Доставка и оплата</span></a>
+      <a class="header__nav-item" href=""><span>Фото и видео</span></a>
+      <a class="header__nav-item" href=""><span>Отзывы</span></a>
+      <a class="header__nav-item" href=""><span>Наши фермеры</span></a>
+      <a class="header__nav-item" href=""><span>Рецепты</span></a>
+      <a class="header__nav-item" href=""><span>Гарантии</span></a>
+      <a class="header__nav-item" href=""><span>Новости</span></a>
+    </nav>
+    <a href="mailto:papinalavka@gmail.com" class="header__email">papinalavka@gmail.com</a>
+    <div class="header__socials">
+      <a href="https://vk.com" class="header__socials-item" title="ВКонтакте"><i class="icon-vk"></i></a>
+      <a href="https://ok.ru" class="header__socials-item" title="Одноклассники"><i class="icon-ok"></i></a>
+      <a href="https://whatsapp.com" class="header__socials-item" title="WhatsApp"><i class="icon-whatsapp"></i></a>
+      <a href="https://telegram.com" class="header__socials-item" title="Telegram"><i class="icon-telegram"></i></a>
+    </div>
+  </div>
+  <div class="header__btm">
+    <div class="header__btm-inner">
+      <div class="header__logo">
+        <a href="./" title="Перейти на Главную"><img src="./img/svg/misc/logo-papina-lavka.svg" alt="Папина Лавка – интернет-магазин натуральных продуктов" title="Папина Лавка – это Натуральные продукты с экоферм с доставкой"></a>
+      </div>
+      <div class="header__town-select">
+        <a href="" class="header__town-option current"><i class="icon-map"></i><span>Воронеж</span></a>
+        <div class="header__town-options">
+          <a href="" class="header__town-option"><span>Москва</span></a>
+          <a href="" class="header__town-option"><span>Курск</span></a>
+          <a href="" class="header__town-option"><span>Липецк</span></a>
+          <a href="" class="header__town-option"><span>Белгород</span></a>
+          <a href="" class="header__town-option"><span>Нижний Новгород</span></a>
+        </div>
+      </div>
+      <div class="header__search">
+        <form action="" class="header__search-form">
+          <input type="text" class="header__search-input" name="search-string" value="" id="search-string" placeholder="Поиск">
+          <input type="submit" class="header__search-submit">
+        </form>
+      </div>
+      <a href="tel:+79290095055" class="header__phone">+7 929 009-50-55</a>
+      <div class="header__misc">
+        <a class="header__misc-item cat" href=""><i class="icon-catalog"></i><span class="text">Каталог</span></a>
+        <a class="header__misc-item delivery" href=""><i class="icon-car"></i><span class="text">Поставки</span></a>
+        <a class="header__misc-item fav" href=""><i class="icon-heart"></i><span class="text">Избранное</span></a>
+        <a class="header__misc-item enter popup-login-call" href=""><i class="icon-person"></i><span class="text">Вход</span></a>
+        <a class="header__misc-item cart" href=""><i class="icon-cart"></i><span class="text">Корзина</span><span class="cart-num">23</span><span class="cart-sum">12 873 ₽</span></a>
+      </div>
+      <div class="header__burger">
+        <button class="header__burger-item" title="Открыть меню"><i class="icon-burger"></i></button>
+        <button class="header__burger-item hidden" title="Закрыть меню"><i class="icon-close"></i></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main class="content">
+    <div class="content__inner">
+      <div class="crumbs">
+        <a href="" class="crumbs__item">Главная</a>
+        <span href="" class="crumbs__item">Оформление заказа</span>
+      </div>
+      <h1 class="h2 mb-30 order-page-title">Оформление заказа</h1>
+      <form class="order" id="order">
+        <div class="order__item order__way">
+          <div class="order__title-block">
+            <p class="order__title"><i class="icon-lorry"></i>Способ получения</p>
+            <div class="order__way-radios">
+              <label for="order-way-1" class="active pickup_btn">Самовывоз</label>
+              <input class="visually-hidden" type="radio" id="order-way-1" name="способ_получения" value="Самовывоз" checked/>
+              <label for="order-way-2" class="delivery_btn">Доставка</label>
+              <input class="visually-hidden" type="radio" id="order-way-2" name="способ_получения" value="Доставка" />
+              <label for="order-way-3" class="ex-delivery_btn">Экспресс-доставка</label>
+              <input class="visually-hidden" type="radio" id="order-way-3" name="способ_получения" value="Экспресс-доставка" />
+            </div>
+          </div>
+          <div class="order__way-address hidden">
+            <div for="date" class="order__way-datepicker">
+              <i class="icon-calendar"></i>
+              <label for="date">Дата доставки</label>
+              <input type="text" id="date" name="дата_доставки" placeholder="Выбрать дату доставки" disabled>
+              <i class="icon-arrow"></i>
+            </div>
+            <div class="order__way-address-item form-group">
+              <label for="town">Адрес*</label>
+              <input type="text" id="town" name="адрес" required disabled placeholder="Воронеж">
+              <div class="error"></div>
+            </div>
+            <!-- <div class="order__way-address-item form-group">
+              <label for="house">Дом*</label>
+              <input type="text" id="house" name="дом" required disabled>
+              <div class="error"></div>
+            </div>
+            <div class="order__way-address-item form-group">
+              <label for="building">Строение</label>
+              <input type="text" id="building" name="строение" disabled>
+              <div class="error"></div>
+            </div>
+            <div class="order__way-address-item form-group">
+              <label for="corp">Корпус</label>
+              <input type="text" id="corp" name="корпус" disabled>
+              <div class="error"></div>
+            </div>
+            <div class="order__way-address-item form-group">
+              <label for="entrance">Подъезд</label>
+              <input type="text" id="entrance" name="подъезд" disabled>
+              <div class="error"></div>
+            </div>
+            <div class="order__way-address-item form-group">
+              <label for="floor">Этаж</label>
+              <input type="text" id="floor" name="этаж" disabled>
+              <div class="error"></div>
+            </div>
+            <div class="order__way-address-item form-group">
+              <label for="apartment">Квартира</label>
+              <input type="text" id="apartment" name="квартира" disabled>
+              <div class="error"></div>
+            </div> -->
+
+          </div>
+          <div class="order__way-shops">
+            <label for="address-1" class="active"><i class="icon-radio-checked"></i>ул. Ворошилова, д. 16</label>
+            <input class="visually-hidden" type="radio" id="address-1" name="адрес_магазина" value="ул. Ворошилова,  д. 16" checked />
+            <label for="address-2"><i class="icon-radio"></i>ул. Карла Маркса, д. 94</label>
+            <input class="visually-hidden" type="radio" id="address-2" name="адрес_магазина" value="ул. Карла Маркса, д. 94" />
+            <label for="address-3"><i class="icon-radio"></i>ул. Загоровского, д. 1</label>
+            <input class="visually-hidden" type="radio" id="address-3" name="адрес_магазина" value="ул. Загоровского, д. 1" />
+            <label for="address-4"><i class="icon-radio"></i>ул. Вл. Невского, д. 47</label>
+            <input class="visually-hidden" type="radio" id="address-4" name="адрес_магазина" value="ул. Вл. Невского, д. 47" />
+            <label for="address-5"><i class="icon-radio"></i>ул. Переверткина, д. 24</label>
+            <input class="visually-hidden" type="radio" id="address-5" name="адрес_магазина" value="ул. Переверткина, д. 24" />
+          </div>
+          <div class="order__way-map">
+            <img src="./img/misc/map.webp" alt="Карта">
+          </div>
+          <div class="order__attention">
+            <p class="order__title"><i class="icon-exclam"></i>Внимание</p>
+            <div class="order__attention-pickup">
+              <p>Выбран «Самовывоз». Продукт имеется в наличии, Вы его можете забрать из магазина в день оформления заказа или на следующий день после оформления заказа.</p>
+              <p>Срок и время оговариваются с менеджером при оформлении заказа.</p>
+              <p>*Т.к. ряд продукции продается поштучно, а цена указана за килограмм, то стоимость может меняться, менеджер ознакомит Вас с итоговой стоимостью исходя из реального веса при подтверждении заказа.</p>
+            </div>
+            <div class="order__attention-deliv hidden">
+              <p>Выбрана Доставка, она осуществляется в выбранный день при оформлении заказа. Время доставки оговаривается с менеджером при оформлении заказа.</p>
+              <p>Т.к. ряд продукции продается поштучно, а цена указана за килограмм, то стоимость может меняться, менеджер ознакомит вас с итоговой стоимостью исходя из реального веса при подтверждения заказа.</p>
+            </div>
+            <div class="order__attention-ex-deliv hidden">
+              <p>Выбрана Экспресс-доставка, она осуществляется в текущий день после оформления заказа.</p>
+              <p>Срок и время доставки оговариваются с менеджером при оформлении заказа.</p>
+              <p> *Т.к. ряд продукции продается поштучно, а цена указана за килограмм, то стоимость может меняться, менеджер ознакомит Вас с итоговой стоимостью исходя из реального веса при подтверждении заказа.</p>
+            </div>
+          </div>
+        </div>
+        <div class="order__item order__products">
+          <div class="order__title-block">
+            <p class="order__title"><i class="icon-cart"></i>Продукты в заказе</p>
+            <div class="order__title-block-btns">
+              <button class="order__title-block-btn delete red">Удалить выбранное</button>
+              <button class="order__title-block-btn clear">Очистить корзину</button>
+            </div>
+          </div>
+          <div class="order__products-items">
+            <div class="order__products-item pb-5">
+              <span>Наименование</span>
+              <span>Цена</span>
+              <span class="dib tac">Количество</span>
+              <span>Сумма</span>
+            </div>
+            <div class="order__products-item prod">
+              <div class="pr-desc">
+                <i class="icon-checkbox"></i>
+                <img src="./img/products/steak-forel.webp" alt="Фото Стейки Форели свежемороженые (Карелия)">
+                <a href="" class="pr-title">Стейки Форели свежемороженые (Карелия)</a>
+                <input class="visually-hidden" type="checkbox" name="продукт-1" value="Стейки Форели свежемороженые (Карелия)" title="Стейки Форели свежемороженые (Карелия)">
+                <p class="except">Только: Экспресс-доставка, Самовывоз</p>
+              </div>
+              <div class="pr-price">
+                <span class="pr-lbl">Цена:</span>
+                <span class="pr-cur"><span class="prod-price-cur">1 189</span> ₽</span>
+                <span class="pr-old"><span class="prod-price-old">1 221</span> ₽</span>
+              </div>
+              <div class="pr-count-wrap">
+                <label for="prod-num-1" class="pr-lbl">Количество</label>
+                <div class="pr-count">
+                  <i class="icon-minus"></i>
+                  <input type="number" class="pr-count__input" id="prod-num-1" name="количество-1" value="1">
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="pr-price">
+                <span class="pr-lbl">Цена:</span>
+                <span class="pr-cur"><span class="prod-price-cur-sum">12 378</span> ₽</span>
+                <span class="pr-old"><span class="prod-price-old-sum">2 442</span> ₽</span>
+              </div>
+            </div>
+            <div class="order__products-item prod">
+              <div class="pr-desc">
+                <i class="icon-checkbox"></i>
+                <img src="./img/products/pechen-treski.webp" alt="Фото Печень Трески в стекле 500 г (Мурманск)">
+                <a href="" class="pr-title">Печень Трески в стекле 500 г (Мурманск)</a>
+                <input class="visually-hidden" type="checkbox" name="продукт-2" value="Печень Трески в стекле 500 г (Мурманск)" title="Печень Трески в стекле 500 г (Мурманск)">
+                <p class="except">Только: Экспресс-доставка</p>
+              </div>
+              <div class="pr-price">
+                <span class="pr-lbl">Цена:</span>
+                <span class="pr-cur"><span class="prod-price-cur">699</span> ₽</span>
+                <span class="pr-old"><span class="prod-price-old"></span></span>
+              </div>
+              <div class="pr-count-wrap">
+                <label for="prod-num-2" class="pr-lbl">Количество</label>
+                <div class="pr-count">
+                  <i class="icon-minus"></i>
+                  <input type="number" class="pr-count__input" id="prod-num-2" name="количество-2" value="1">
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="pr-price">
+                <span class="pr-lbl">Цена:</span>
+                <span class="pr-cur"><span class="prod-price-cur-sum">699</span> ₽</span>
+                <span class="pr-old"><span class="prod-price-old-sum"></span></span>
+              </div>
+            </div>
+            <div class="order__products-item prod">
+              <div class="pr-desc">
+                <i class="icon-checkbox"></i>
+                <img src="./img/products/steak-forel.webp" alt="Фото Стейки Форели свежемороженые (Карелия)">
+                <a href="" class="pr-title">Стейки Форели свежемороженые (Карелия)</a>
+                <input class="visually-hidden" type="checkbox" name="продукт-1" value="Стейки Форели свежемороженые (Карелия)" title="Стейки Форели свежемороженые (Карелия)">
+              </div>
+              <div class="pr-price">
+                <span class="pr-lbl">Цена:</span>
+                <span class="pr-cur"><span class="prod-price-cur">1 189</span> ₽</span>
+                <span class="pr-old"><span class="prod-price-old">1 221</span> ₽</span>
+              </div>
+              <div class="pr-count-wrap">
+                <label for="prod-num-1" class="pr-lbl">Количество</label>
+                <div class="pr-count">
+                  <i class="icon-minus"></i>
+                  <input type="number" class="pr-count__input" id="prod-num-1" name="количество-1" value="1">
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="pr-price">
+                <span class="pr-lbl">Цена:</span>
+                <span class="pr-cur"><span class="prod-price-cur-sum">12 378</span> ₽</span>
+                <span class="pr-old"><span class="prod-price-old-sum">2 442</span> ₽</span>
+              </div>
+            </div>
+            <div class="order__products-item prod">
+              <div class="pr-desc">
+                <i class="icon-checkbox"></i>
+                <img src="./img/products/pechen-treski.webp" alt="Фото Печень Трески в стекле 500 г (Мурманск)">
+                <a href="" class="pr-title">Печень Трески в стекле 500 г (Мурманск)</a>
+                <input class="visually-hidden" type="checkbox" name="продукт-2" value="Печень Трески в стекле 500 г (Мурманск)" title="Печень Трески в стекле 500 г (Мурманск)">
+              </div>
+              <div class="pr-price">
+                <span class="pr-lbl">Цена:</span>
+                <span class="pr-cur"><span class="prod-price-cur">699</span> ₽</span>
+                <span class="pr-old"><span class="prod-price-old"></span></span>
+              </div>
+              <div class="pr-count-wrap">
+                <label for="prod-num-2" class="pr-lbl">Количество</label>
+                <div class="pr-count">
+                  <i class="icon-minus"></i>
+                  <input type="number" class="pr-count__input" id="prod-num-2" name="количество-2" value="1">
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="pr-price">
+                <span class="pr-lbl">Цена:</span>
+                <span class="pr-cur"><span class="prod-price-cur-sum">699</span> ₽</span>
+                <span class="pr-old"><span class="prod-price-old-sum"></span></span>
+              </div>
+            </div>
+            <div class="order__products-item prod">
+              <div class="pr-desc">
+                <i class="icon-checkbox"></i>
+                <img src="./img/products/steak-forel.webp" alt="Фото Стейки Форели свежемороженые (Карелия)">
+                <a href="" class="pr-title">Стейки Форели свежемороженые (Карелия)</a>
+                <input class="visually-hidden" type="checkbox" name="продукт-1" value="Стейки Форели свежемороженые (Карелия)" title="Стейки Форели свежемороженые (Карелия)">
+              </div>
+              <div class="pr-price">
+                <span class="pr-lbl">Цена:</span>
+                <span class="pr-cur"><span class="prod-price-cur">1 189</span> ₽</span>
+                <span class="pr-old"><span class="prod-price-old">1 221</span> ₽</span>
+              </div>
+              <div class="pr-count-wrap">
+                <label for="prod-num-1" class="pr-lbl">Количество</label>
+                <div class="pr-count">
+                  <i class="icon-minus"></i>
+                  <input type="number" class="pr-count__input" id="prod-num-1" name="количество-1" value="1">
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="pr-price">
+                <span class="pr-lbl">Цена:</span>
+                <span class="pr-cur"><span class="prod-price-cur-sum">12 378</span> ₽</span>
+                <span class="pr-old"><span class="prod-price-old-sum">2 442</span> ₽</span>
+              </div>
+            </div>
+            <div class="order__products-item prod">
+              <div class="pr-desc">
+                <i class="icon-checkbox"></i>
+                <img src="./img/products/pechen-treski.webp" alt="Фото Печень Трески в стекле 500 г (Мурманск)">
+                <a href="" class="pr-title">Печень Трески в стекле 500 г (Мурманск)</a>
+                <input class="visually-hidden" type="checkbox" name="продукт-2" value="Печень Трески в стекле 500 г (Мурманск)" title="Печень Трески в стекле 500 г (Мурманск)">
+              </div>
+              <div class="pr-price">
+                <span class="pr-lbl">Цена:</span>
+                <span class="pr-cur"><span class="prod-price-cur">699</span> ₽</span>
+                <span class="pr-old"><span class="prod-price-old"></span></span>
+              </div>
+              <div class="pr-count-wrap">
+                <label for="prod-num-2" class="pr-lbl">Количество</label>
+                <div class="pr-count">
+                  <i class="icon-minus"></i>
+                  <input type="number" class="pr-count__input" id="prod-num-2" name="количество-2" value="1">
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="pr-price">
+                <span class="pr-lbl">Цена:</span>
+                <span class="pr-cur"><span class="prod-price-cur-sum">699</span> ₽</span>
+                <span class="pr-old"><span class="prod-price-old-sum"></span></span>
+              </div>
+            </div>
+          </div>
+          <!-- <button class="btn mt-15 popup-order-call">Быстрый заказ</button> -->
+          <a href="" class="order__products-quick-order popup-order-call">Оформить быстрый заказ</a>
+        </div>
+        <div class="order__item order__what-to-do">
+          <div class="order__title-block">
+            <p class="order__title">Что сделать, если продукт отсутствует</p>
+          </div>
+          <div class="what-to-do__radios">
+            <label for="what-to-do-1" class="active" for="what-to-do-1"><i class="icon-radio-checked"></i>Предложить варианты замены</label>
+            <input class="visually-hidden" type="radio" id="what-to-do-1" name="если_продукт_отсутствует" value="Предложить варианты замены" checked>
+            <label for="what-to-do-2"><i class="icon-radio"></i> Убрать из заказа</label>
+            <input class="visually-hidden" type="radio" id="what-to-do-2" name="если_продукт_отсутствует" value="Убрать из заказа">
+          </div>
+        </div>
+        <div class="order__item order__contacts">
+          <div class="order__title-block">
+            <p class="order__title"><i class="icon-person"></i>Контактные данные</p>
+            <div class="order__title-block-btns">
+              <a href="" class="order__title-block-btn">У меня есть логин и пароль</a>
+            </div>
+          </div>
+          <div class="contacts-person">
+            <div class="contacts-person__item form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" name="имя" value="" required>
+              <div class="error"></div>
+            </div>
+            <div class="contacts-person__item form-group">
+              <label for="email">Электронная почта</label>
+              <input type="text" class="email" id="email" name="email" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="ящик@домен.зона" required>
+              <div class="error"></div>
+            </div>
+            <div class="contacts-person__item form-group">
+              <label for="tel">Телефон</label>
+              <input type="tel" id="tel" name="телефон" value="" pattern="8 \([0-9]{3}\) [0-9]{3}-[0-9]{4}" placeholder="8 (123) 456-7890" required>
+              <div class="error"></div>
+            </div>
+            <div class="contacts-person__item">
+              <label for="comments">Комментарии к заказу</label>
+              <textarea id="comments" name="комментарии" value=""></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="order__item order__summary">
+          <p class="order__summary-prod-num"><span>Продукты (<span class="prod-all-num">3</span>)</span> <span><span class="prod-all-sum">3 077</span> ₽</span>
+          </p>
+          <p class="free-deliv-limit" style="display: none;">10000</p>
+          <p class="deliv-sum" style="display: none;">750</p>
+          <p class="order__summary-prod-delivery">Доставка<span><span class="prod-deliv-sum">750</span><span class="ruble"> ₽</span></span>
+          </p>
+          <p class="order__summary-prod-ex-delivery hidden">Экспресс-доставка<span><span class="prod-ex-deliv-sum">500</span> ₽</span>
+          </p>
+          <p class="order__summary-prod-extra">до бесплатной доставки не хватает продуктов на сумму: <span class="prod-lack-sum">500</span> ₽</p>
+          <p class="order__summary-prod-sum"><span>Итого</span><span><span class="prod-all-deliv-sum">3 577</span> ₽</span>
+          </p>
+          <p class="order__summary-prod-points-all">Доступно баллов для списания: <span class="prod-points">256</span></p>
+          <p class="order__summary-prod-points-off">Списать <input type="number" name="списать_баллов" class="prod-points-off" value="0" title="Списать баллы"> баллов <span class="prod-points-off-all">Все</span></p>
+          <p class="order__summary-prod-sum-discount">к оплате <span><span class="prod-discount-sum">3 477</span> ₽</span>
+          </p>
+          <input type="hidden" id="prod-all-num" name="количество_продуктов" value="">
+          <input type="hidden" id="prod-all-sum" name="итого" value="">
+          <input type="hidden" id="prod-deliv-sum" name="стоимость_доставки" value="">
+          <input type="hidden" id="prod-all-deliv-sum" name="итого_с_доставкой" value="">
+          <input type="hidden" id="prod-points" name="баллов_доступно_для_списания" value="">
+          <input type="hidden" id="prod-discount-sum" name="итого_к_оплате" value="">
+          <div>
+            <button type="submit" class="btn">Оформить заказ</button>
+          </div>
+          <p class="order__summary-info">Нажимая на кнопку «Оформить заказ», вы соглашаетесь на <a href="">обработку персональных данных</a></p>
+        </div>
+      </form>
+    </div>
+  </main>
+  <aside class="aside">
+    <div class="catalog">
+  <div class="catalog__search">
+    <form action="" class="catalog__search-form">
+      <input type="text" class="catalog__search-input" name="search-string" value="" id="search-string" placeholder="Поиск">
+      <input type="submit" class="catalog__search-submit">
+    </form>
+  </div>
+  <nav class="catalog__nav" aria-label="Каталог товаров">
+    <div class="catalog__item has-submenu">
+      <i class="icon-categ icon-categ--bus"></i>
+      <a href="" class="catalog__item-text">Поставки</a>
+      <nav class="catalog__item-submenu">
+        <div class="catalog__submenu-inner postavki">
+          <a href=""><span>Все поставки</span></a>
+          <a href=""><span>Молоко коровье</span> <b>25.09</b></a>
+          <a href=""><span>Рыбная поставка</span> <b>01.10</b></a>
+          <a href=""><span>Мясо и молоко</span> <b>10.10</b></a>
+        </div>
+      </nav>
+    </div>
+    <div class="catalog__item has-submenu">
+      <i class="icon-categ icon-categ--fish"></i>
+      <a href="" class="catalog__item-text">Рыба</a>
+      <nav class="catalog__item-submenu">
+        <div class="catalog__submenu-inner">
+          <a href=""><span>Вся рыба</span></a>
+          <a href=""><span>Охлажденная</span></a>
+          <a href=""><span>Замороженная</span></a>
+          <a href=""><span>Соленая</span></a>
+          <a href=""><span>Холодного копчения</span></a>
+          <a href=""><span>Горячего копчения</span></a>
+        </div>
+      </nav>
+    </div>
+    <div class="catalog__item has-submenu">
+      <i class="icon-categ icon-categ--caviar"></i>
+      <a href="" class="catalog__item-text">Икра</a>
+      <nav class="catalog__item-submenu">
+        <div class="catalog__submenu-inner">
+          <a href=""><span>Вся икра</span></a>
+          <a href=""><span>Красная</span></a>
+          <a href=""><span>Черная</span></a>
+          <a href=""><span>Разное</span></a>
+        </div>
+      </nav>
+    </div>
+    <div class="catalog__item has-submenu">
+      <i class="icon-categ icon-categ--seafood"></i>
+      <a href="" class="catalog__item-text">Морепродукты</a>
+      <nav class="catalog__item-submenu">
+        <div class="catalog__submenu-inner">
+          <a href=""><span>Все морепродукты</span></a>
+          <a href=""><span>Краб камчатский</span></a>
+          <a href=""><span>Креветки</span></a>
+          <a href=""><span>Лангустины</span></a>
+          <a href=""><span>Осьминоги</span></a>
+          <a href=""><span>Мидии</span></a>
+          <a href=""><span>Кальмары</span></a>
+          <a href=""><span>Гребешок</span></a>
+          <a href=""><span>Разное</span></a>
+        </div>
+      </nav>
+    </div>
+    <div class="catalog__item has-submenu">
+      <i class="icon-categ icon-categ--meat"></i>
+      <a href="" class="catalog__item-text">Мясо</a>
+      <nav class="catalog__item-submenu">
+        <div class="catalog__submenu-inner">
+          <a href=""><span>Все мясо</span></a>
+          <a href=""><span>Говядина</span></a>
+          <a href=""><span>Крольчатина</span></a>
+          <a href=""><span>Баранина</span></a>
+        </div>
+      </nav>
+    </div>
+    <div class="catalog__item has-submenu">
+      <i class="icon-categ icon-categ--meat-delicacies"></i>
+      <a href="" class="catalog__item-text">Мясные деликатесы</a>
+      <nav class="catalog__item-submenu">
+        <div class="catalog__submenu-inner">
+          <a href=""><span>Все мясные деликатесы</span></a>
+          <a href=""><span>Колбасы</span></a>
+          <a href=""><span>Сосиски и сардельки</span></a>
+          <a href=""><span>Ветчина</span></a>
+          <a href=""><span>Холодец и Зельц</span></a>
+          <a href=""><span>Купаты</span></a>
+          <a href=""><span>Вырезка</span></a>
+          <a href=""><span>Сало</span></a>
+        </div>
+      </nav>
+    </div>
+    <div class="catalog__item">
+      <i class="icon-categ icon-categ--chicken"></i>
+      <a href="" class="catalog__item-text">Птица</a>
+    </div>
+    <div class="catalog__item">
+      <i class="icon-categ icon-categ--eggs"></i>
+      <a href="" class="catalog__item-text">Яйца</a>
+    </div>
+    <div class="catalog__item has-submenu">
+      <i class="icon-categ icon-categ--cheese"></i>
+      <a href="" class="catalog__item-text">Сыры</a>
+      <nav class="catalog__item-submenu">
+        <div class="catalog__submenu-inner">
+          <a href=""><span>Все сыры</span></a>
+          <a href=""><span>Мягкие сыры</span></a>
+          <a href=""><span>Полутвердые сыры</span></a>
+          <a href=""><span>Твердые сыры</span></a>
+          <a href=""><span>Сыры для жарки</span></a>
+        </div>
+      </nav>
+    </div>
+    <div class="catalog__item has-submenu">
+      <i class="icon-categ icon-categ--milk"></i>
+      <a href="" class="catalog__item-text">Молочная ферма</a>
+      <nav class="catalog__item-submenu">
+        <div class="catalog__submenu-inner">
+          <a href=""><span>Вся молочная ферма</span></a>
+          <a href=""><span>Молоко</span></a>
+          <a href=""><span>Масло</span></a>
+          <a href=""><span>Творог</span></a>
+          <a href=""><span>Йогурт</span></a>
+          <a href=""><span>Сметана</span></a>
+          <a href=""><span>Биопродукты</span></a>
+        </div>
+      </nav>
+    </div>
+    <div class="catalog__item has-submenu">
+      <i class="icon-categ icon-categ--semi-finished-products"></i>
+      <a href="" class="catalog__item-text">Полуфабрикаты</a>
+      <nav class="catalog__item-submenu">
+        <div class="catalog__submenu-inner">
+          <a href=""><span>Все полуфабрикаты</span></a>
+          <a href=""><span>Пельмени</span></a>
+          <a href=""><span>Вареники</span></a>
+          <a href=""><span>Блинчики</span></a>
+          <a href=""><span>Манты и Хинкали</span></a>
+          <a href=""><span>Котлеты</span></a>
+          <a href=""><span>В кляре и панировке</span></a>
+          <a href=""><span>Супы и их составляющие</span></a>
+          <a href=""><span>Разное</span></a>
+        </div>
+      </nav>
+    </div>
+    <div class="catalog__item has-submenu">
+      <i class="icon-categ icon-categ--pates"></i>
+      <a href="" class="catalog__item-text">Паштеты, масла, <br>специи, заготовки</a>
+      <nav class="catalog__item-submenu">
+        <div class="catalog__submenu-inner">
+          <a href=""><span>Все продукты</span></a>
+          <a href=""><span>Паштеты</span></a>
+          <a href=""><span>Масла холодного отжима</span></a>
+          <a href=""><span>Соль адыгейская</span></a>
+          <a href=""><span>Специи</span></a>
+          <a href=""><span>Консервация</span></a>
+        </div>
+      </nav>
+    </div>
+    <div class="catalog__item has-submenu">
+      <i class="icon-categ icon-categ--sweets"></i>
+      <a href="" class="catalog__item-text">Сладости</a>
+      <nav class="catalog__item-submenu">
+        <div class="catalog__submenu-inner">
+          <a href=""><span>Все сладости</span></a>
+          <a href=""><span>Мёд и Варенье</span></a>
+          <a href=""><span>Кедровая продукция</span></a>
+          <a href=""><span>Шоколад, конфеты</span></a>
+          <a href=""><span>Мармелад</span></a>
+        </div>
+      </nav>
+    </div>
+    <div class="catalog__item">
+      <i class="icon-categ icon-categ--tea-coffee"></i>
+      <a href="" class="catalog__item-text">Чай и кофе</a>
+    </div>
+    <div class="catalog__item">
+      <i class="icon-categ icon-categ--water"></i>
+      <a href="" class="catalog__item-text">Вода</a>
+    </div>
+    <div class="catalog__item">
+      <i class="icon-categ icon-categ--berries-mushrooms"></i>
+      <a href="" class="catalog__item-text">Ягоды и грибы</a>
+    </div>
+    <div class="catalog__item">
+      <i class="icon-categ icon-categ--gifts"></i>
+      <a href="" class="catalog__item-text">Все для подарка</a>
+    </div>
+    <div class="catalog__item">
+      <i class="icon-categ icon-categ--bread"></i>
+      <a href="" class="catalog__item-text">Хлеб</a>
+    </div>
+  </nav>
+</div>
+
+  </aside>
+  <footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__copyright">
+      <p class="footer__copyright-text"><i class="icon-copyright"></i>Папина Лавка 2010‑2022</p>
+      <p class="footer__copyright-agreement"><a href="">Согласие на обработку персональных данных</a></p>
+    </div>
+    <div class="footer__contacts">
+      <a href="tel:+79290095055" class="footer__contacts-phone"><i class="icon-phone"></i>+7 929 009-50-55</a>
+      <a href="mailto:papinalavka@gmail.com" class="footer__contacts-email"><i class="icon-mail-solid"></i>papinalavka@gmail.com</a>
+      <div class="footer__socials">
+        <a href="https://vk.com" title="ВКонтакте"><i class="icon-vk"></i></a>
+        <a href="https://ok.ru" title="Одноклассники"><i class="icon-ok"></i></a>
+        <a href="https://www.whatsapp.com/" title="Whatsapp"><i class="icon-whatsapp"></i></a>
+        <a href="https://web.telegram.org/a/" title="Телеграм"><i class="icon-telegram"></i></a>
+      </div>
+    </div>
+    <nav class="footer__nav">
+      <a href=""><span>О нас</span></a>
+      <a href=""><span>Доставка и оплата</span></a>
+      <a href=""><span>Фото и видео</span></a>
+      <a href=""><span>Отзывы</span></a>
+      <a href=""><span>Наши фермеры</span></a>
+      <a href=""><span>Рецепты</span></a>
+      <a href=""><span>Новости</span></a>
+      <a href=""><span>Контакты</span></a>
+    </nav>
+    <a href="https://inteltone.ru/" class="footer__intrid">
+      <span class="footer__intrid-circle">
+          <span class="footer__intrid-circle--in"></span>
+      </span>
+      <p class="footer__intrid-text">made in LOGO</p>
+    </a>
+  </div>
+</footer>
+
+  <!--  -->
+  <div class="next-deliv">
+  <button class="next-deliv__btn deliv-close">
+    <i class="icon-arrow"></i>
+    <span class="text">Ближайшие поставки</span>
+  </button>
+  <a href="" class="text">
+    <p>Молоко коровье, козье, сметана, творог, сыры, говядина, крольчатина</p>
+    <time>25.09</time>
+  </a>
+  <a href="" class="fish">
+    <time>01.10</time>
+    <p class="title">Рыбная поставка</p>
+  </a>
+  <a href="" class="meat">
+    <time>10.10</time>
+    <p class="title">Мясо и молоко</p>
+  </a>
+  <a href="" class="text">
+    <p>Молоко коровье, козье, сметана, творог, сыры, говядина, крольчатина</p>
+    <time>25.09</time>
+  </a>
+</div>
+
+  <!--  -->
+  <dialog class="popup pop-order-wrap" id="pop-order">
+  <div class="pop-order">
+
+    <form class="order" action="" method="" id="order__form-quick-order">
+      <div class="order__item order__products">
+        <div class="order__title-block">
+          <p class="order__title"><i class="icon-cart"></i>ВАш заказ</p>
+          <div class="order__title-block-btns">
+            <button class="order__title-block-btn red">Удалить выбранное</button>
+            <button class="order__title-block-btn">Очистить корзину</button>
+          </div>
+        </div>
+        <div class="order__products-items">
+          <div class="order__products-item head pb-5">
+            <span>Наименование</span>
+            <span>Цена</span>
+            <span class="dib tac">Количество</span>
+            <span>Сумма</span>
+          </div>
+          <div class="order__products-item prod">
+            <div class="pr-desc qo">
+              <i class="icon-checkbox"></i>
+              <img src="./img/products/steak-forel.webp" alt="Фото Стейки Форели свежемороженые (Карелия)">
+              <label class="pr-title" for="prod-name-1">Стейки Форели свежемороженые (Карелия)</label>
+              <input class="visually-hidden" type="checkbox" id="prod-name-1" name="prod-name" checked>
+            </div>
+            <div class="pr-price">
+              <span class="pr-lbl">Цена:</span>
+              <span class="pr-cur">1 189 ₽</span>
+              <span class="pr-old">1 221 ₽</span>
+            </div>
+            <div class="pr-count-wrap">
+              <label for="prod-num-1" class="pr-lbl">Количество</label>
+              <div class="pr-count">
+                <i class="icon-minus"></i>
+                <input type="number" class="pr-count__input" id="prod-num-1" name="pr-count-1" value="1">
+                <i class="icon-plus"></i>
+              </div>
+            </div>
+            <div class="pr-price">
+              <span class="pr-lbl">Цена:</span>
+              <span class="pr-cur">12 378 ₽</span>
+              <span class="pr-old sum">2 442 ₽</span>
+            </div>
+          </div>
+          <div class="order__products-item prod">
+            <div class="pr-desc qo">
+              <i class="icon-checkbox"></i>
+              <img src="./img/products/pechen-treski.webp" alt="Фото Печень Трески в стекле 500 г (Мурманск)">
+              <label class="pr-title" for="prod-name-2">Печень Трески в стекле 500 г (Мурманск)</label>
+              <input class="visually-hidden" type="checkbox" id="prod-name-2" name="prod-name" checked>
+            </div>
+            <div class="pr-price">
+              <span class="pr-lbl">Цена:</span>
+              <span class="pr-cur">699 ₽</span>
+              <span class="pr-old"></span>
+            </div>
+            <div class="pr-count-wrap">
+              <label for="prod-num-2" class="pr-lbl">Количество</label>
+              <div class="pr-count">
+                <i class="icon-minus"></i>
+                <input type="number" class="pr-count__input" id="prod-num-2" name="pr-count-2" value="1">
+                <i class="icon-plus"></i>
+              </div>
+            </div>
+            <div class="pr-price">
+              <span class="pr-lbl">Цена:</span>
+              <span class="pr-cur">699 ₽</span>
+              <span class="pr-old sum"></span>
+            </div>
+          </div>
+        </div>
+        <div class="order__overall-sum-wrap">
+          <p class="order__overall-sum-title">Общая стоимость </p>
+          <p class="order__overall-sum"><span class="pop-all-sum">3 477</span> ₽</p>
+          <input type="hidden" name="количество_продуктов" id="pop-prod-num" value="">
+          <input type="hidden" name="итого" id="pop-all-sum" value="">
+        </div>
+      </div>
+      <div class="order__form-quick-order">
+        <div class="form-group">
+          <label for="name">Ваще имя</label>
+          <input type="text" class="input name" id="name" name="имя" required>
+          <div class="error"></div>
+        </div>
+        <div class="form-group">
+          <label for="pop-tel">Телефон</label>
+          <input type="tel" class="input tel" id="pop-tel" name="телефон" pattern="8 \([0-9]{3}\) [0-9]{3}-[0-9]{4}" required>
+          <div class="error"></div>
+        </div>
+        <div class="form-group">
+          <label for="pop-email">Электронная почта</label>
+          <input type="text" class="input email" id="pop-email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+          <div class="error"></div>
+        </div>
+        <div class="comments-wrap">
+          <label for="comments">Комментарии к заказу</label>
+          <textarea class="comments" id="comments" name="комментарии"></textarea>
+        </div>
+        <button class="btn" type="submit">Оформить заказ</button>
+      </div>
+      <p class="agreement">Нажимая на кнопку «Оформить заказ», вы соглашаетесь с политикой обработки персональных данных</p>
+  </div>
+  </form>
+
+  </div>
+  <i class="icon-close close"></i>
+</dialog>
+
+  <!--  -->
+  <dialog class="popup pop-login-wrap" id="pop-login">
+  <div class="pop-login">
+    <p class="pop-login__title">Вход в личный кабинет</p>
+    <form action="" method="" class="pop-login__form" id="pop-login__form">
+      <div class="form-group">
+        <label for="email-login">Электронная почта</label>
+        <input type="text" class="pop-login__input email" name="email" id="email-login" placeholder="Электронная почта" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+        <div class="error"></div>
+      </div>
+      <div class="form-group">
+        <label for="password-login">Пароль</label>
+        <input type="password" class="pop-login__input email" name="пароль" id="password-login" placeholder="Пароль" pattern=".{6,}" required>
+        <div class="error"></div>
+      </div>
+      <div class="pop-login__links">
+        <a href="">Регистрация</a>
+        <a href="" class="popup-recovery-call">Забыли пароль</a>
+      </div>
+      <button type="submit" class="btn">Войти</button>
+    </form>
+    <p class="pop-login__agreement">Нажимая на кнопку «Войти», вы соглашаетесь с политикой обработки персональных данных</p>
+  </div>
+  <i class="icon-close close"></i>
+</dialog>
+
+  <!--  -->
+  <dialog class="popup pop-recovery-wrap" id="pop-recovery">
+  <div class="pop-recovery">
+    <p class="pop-recovery__title">Восстановление пароля</p>
+    <form action="" method="" class="pop-recovery__form" id="pop-recovery__form">
+      <div class="form-group">
+        <label for="email-recovery">Введите e-mail</label>
+        <input type="text" class="pop-recovery__input email" name="email" id="email-recovery" placeholder="Введите e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+        <div class="error"></div>
+      </div>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+    <p class="pop-recovery__agreement">Нажимая на кнопку «Отправить», вы соглашаетесь с политикой обработки персональных данных</p>
+  </div>
+  <i class="icon-close close"></i>
+</dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+
+</html>
