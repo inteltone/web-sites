@@ -5,4 +5,4 @@
 | №  | Проект                                                                                                     | Демо                                                    |
 | -- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
 | 01 | [Ween](https://github.com/inteltone/web-sites/tree/master/ween)                                            | [Демо](https://inteltone.ru/web-sites/ween/)            |
-|    | [Карта сайта Ween]                                                                                         | [Демо](https://inteltone.ru/web-sites/ween/map.html)    |
+|    | Карта сайта Ween                                                                                           | [Демо](https://inteltone.ru/web-sites/ween/map.html)    |
