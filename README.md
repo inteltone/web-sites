@@ -13,3 +13,4 @@
 | 06 | [Papina Lavka](https://github.com/inteltone/web-sites/tree/master/papina-lavka)             |  5            | [Демо](https://inteltone.ru/web-sites/papina-lavka/)    |
 | 07 | [Konstruct](https://github.com/inteltone/web-sites/tree/master/konstruct)                   |  1            | [Демо](https://inteltone.ru/web-sites/konstruct/)       |
 | 08 | [Food](https://github.com/inteltone/web-sites/tree/master/food)                             |  1            | [Демо](https://inteltone.ru/web-sites/food/)            |
+| 09 | [Recidiviz](https://github.com/inteltone/web-sites/tree/master/recidiviz)                   |  1            | [Демо](https://inteltone.ru/web-sites/recidiviz/)       |
