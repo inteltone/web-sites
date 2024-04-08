@@ -12,3 +12,4 @@
 | 05 | [Naim](https://github.com/inteltone/web-sites/tree/master/naim)                             | 24            | [Демо](https://inteltone.ru/web-sites/naim/)            |
 | 06 | [Papina Lavka](https://github.com/inteltone/web-sites/tree/master/papina-lavka)             |  5            | [Демо](https://inteltone.ru/web-sites/papina-lavka/)    |
 | 07 | [Konstruct](https://github.com/inteltone/web-sites/tree/master/konstruct)                   |  1            | [Демо](https://inteltone.ru/web-sites/konstruct/)       |
+| 08 | [Food](https://github.com/inteltone/web-sites/tree/master/food)                             |  1            | [Демо](https://inteltone.ru/web-sites/food/)            |
