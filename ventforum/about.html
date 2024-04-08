@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О компании</title>
+  <link rel="preload" href="fonts/RubikRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/RubikMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+  <header class="header-site">
+    <div class="container">
+      <div class="header-top">
+        <div class="site-logo">
+          <a href="./" title="Ссылка на Главную страницу сайта"></a>
+        </div>
+        <button class="btn btn--small">Оставить заявку</button>
+      </div>
+    </div>
+    <nav class="menu-prim" data-menu>
+      <div class="container">
+        <div class="contacts-wrap">
+          <div class="contacts">
+            <a href="tel:+78127150015" data-menu-item><svg class="">
+                  <use xlink:href="./img/svg/sprite.svg#phone"></use>
+                </svg>+7 (812) 715-00-15</a>
+            <a href="mailto:info@ventforum.ru" data-menu-item><svg class="">
+                  <use xlink:href="./img/svg/sprite.svg#mail"></use>
+                </svg>info@ventforum.ru</a>
+            <a href="#" class="cta" data-menu-item><svg>
+                  <use xlink:href="./img/svg/sprite.svg#phone-call"></use>
+                </svg>Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-prim__list-wrap">
+        <div class="container">
+          <ul class="menu-prim__list" role="list">
+            <li class="menu-item">
+              <a href="./services.html" class="menu-txt" data-menu-item>Услуги</a>
+            </li>
+            <li class="menu-item">
+              <a href="./cases.html" class="menu-txt" data-menu-item>Кейсы и клиенты</a>
+            </li>
+            <li class="menu-item">
+              <a href="./about.html" class="menu-txt active" data-menu-item>О компании</a>
+            </li>
+            <li class="menu-item">
+              <a href="./partners.html" class="menu-txt" data-menu-item>Партнеры</a>
+            </li>
+            <li class="menu-item">
+              <a href="./news.html" class="menu-txt" data-menu-item>Новости</a>
+            </li>
+            <li class="menu-item">
+              <a href="./contacts.html" class="menu-txt" data-menu-item>Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
+      </button>
+  </header>
+
+  <main>
+    <div class="container">
+      <ul class="breadcrumbs" role="list">
+        <li class="item"><a href="./">Главная</a></li>
+        <li class="item">О компании</li>
+      </ul>
+      <article class="about-page">
+        <h1 class="mbe-2m">О компании</h1>
+        <div class="desc flow">
+          <div class="img"><img src="./img/misc/conditioners.jpg" alt="Кондиционеры"></div>
+          <p>Мы контролируем наши продукты от возникновения идеи и до того момента, когда товар покидает наш склад. Свою продукцию мы сами разрабатываем, проектируем, тестируем и производим. Мы располагаем собственной лабораторией с самым современным оборудованием,
+            а также командой опытных специалистов. Однако производство высококачественного вентиляционного оборудования — это далеко не конец процесса. Мы стремимся, чтобы наши клиенты были довольны не только нашими продуктами, но и предоставляемым нами
+            сервисом. Поэтому мы оформляем заказы в максимально сжатые сроки и гибко реагируем на запросы клиентов и требования рынка.</p>
+        </div>
+        <div class="testimonial">
+  <div class="person">
+    <img src="./img/testims/konstantinov.jpg" alt="Николай Константинов">
+    <span class="subtitle-2">Николай Константинов</span>
+    <span class="small">Генеральный директор <br>ООО «ВентФорум»</span>
+  </div>
+  <div class="text">
+    <p>Мы не занимаемся продажей и установкой «бризеров», «рекуператоров» (вообще это часть вентиляционной системы, но в интернете под этим названием продают сомнительные устройства с реверсивным вентилятором), не ставим на приток воздуха «КИВы» (то есть
+      кусок ПНД-трубы с обрывком фенольной минваты внутри) и прочим шарлатанским оборудованием. Пользу оно приносит только тем, кто его продаёт.</p>
+  </div>
+</div>
+
+      </article>
+    </div>
+    <section class="cases-main bg-clr-white pbs-0">
+      <div class="container">
+        <header class="header-block">
+          <div class="desc">
+            <h2><span class="clr-accent">Наши клиенты</span> и выполненные работы</h2>
+            <p class="subtitle-2">Мы охватываем широкий круг услуг по монтажу и проектированию вентиляции</p>
+          </div>
+        </header>
+        <ul class="cases-block auto-grid mbe-3m" role="list">
+          <li class="case-item">
+            <div class="img"><img src="./img/cases/house-of-culture.jpg" alt="Дом культуры"></div>
+            <h4>Дом культуры</h4>
+            <p class="small">п. Низино</p>
+            <a href="#" class="btn btn--ghost">подробнее</a>
+          </li>
+          <li class="case-item">
+            <div class="img"><img src="./img/cases/university-itmo.jpg" alt="Универсистет ИТМО"></div>
+            <h4>Универсистет ИТМО</h4>
+            <p class="small">Санкт-Петербург, Кронверкский пр., 49</p>
+            <a href="#" class="btn btn--ghost">подробнее</a>
+          </li>
+          <li class="case-item">
+            <div class="img"><img src="./img/cases/branch-of-sberbank.jpg" alt="Отделение Сбербанка"></div>
+            <h4>Отделение Сбербанка</h4>
+            <p class="small">Санкт-Петербург, ул. Красного текстильцика, 2</p>
+            <a href="#" class="btn btn--ghost">подробнее</a>
+          </li>
+        </ul>
+        <div class="cases-line">
+  <ul class="cases-line__list" role="list">
+    <li>
+      <a href="#" class="logo logo--small">
+        <img src="./img/logos/clients/sber-h.png" alt="Сбер логотип">
+      </a>
+    </li>
+    <li>
+      <a href="#" class="logo logo--small">
+        <img src="./img/logos/clients/gazprom-h.png" alt="Газпром">
+      </a>
+    </li>
+    <li>
+      <a href="#" class="logo logo--small">
+        <img src="./img/logos/clients/mariinskij-teatr-h.png" alt="Мариинский театр">
+      </a>
+    </li>
+    <li>
+      <a href="#" class="logo logo--small">
+        <img src="./img/logos/clients/verle-garden-h.png" alt="verle garden">
+      </a>
+    </li>
+    <li>
+      <a href="#" class="logo logo--small">
+        <img src="./img/logos/clients/seven-suns-h.png" alt="Seven Suns">
+      </a>
+    </li>
+  </ul>
+  <a href="./cases.html" class="btn">Все кейсы</a>
+</div>
+
+      </div>
+    </section>
+    <section class="services-about">
+      <div class="container">
+        <header class="header-block">
+          <div class="desc">
+            <h2>мы оказываем комплексные <span class="clr-accent">услуги</span>:</h2>
+          </div>
+          <button class="btn">Получить расчет</button>
+        </header>
+        <h3>Что входит в комплексную услугу:</h3>
+<div class="services-about-block auto-grid">
+  <div class="service-about-item">
+    <svg>
+        <use xlink:href="./img/svg/sprite.svg#plan"></use>
+     </svg>
+    <h4>Инженерное проектирование</h4>
+    <p class="small">При проектировании вентиляции, специалисты руководствуются актуальными нормативными документами в области проектирования инженерных коммуникаций</p>
+  </div>
+  <div class="service-about-item">
+    <svg>
+        <use xlink:href="./img/svg/sprite.svg#car"></use>
+     </svg>
+    <h4>Поставка систем и оборудования</h4>
+    <p class="small">Мы берем на себя все заботы по заказу, подбору, доставке оборудования и систем до вашего помещения монтажа в пределах Санкт-Петербурга</p>
+  </div>
+  <div class="service-about-item">
+    <svg>
+        <use xlink:href="./img/svg/sprite.svg#conditioner"></use>
+     </svg>
+    <h4>Монтаж и пуско-наладочные работы</h4>
+    <p class="small">Осуществляем полный цикл работ по установке, отладке пусконаладочных работ, диспетчеризации и автоматизации вентиляционных систем. Каждый из наших сотрудников имеет многолетний опыт.</p>
+  </div>
+  <div class="service-about-item">
+    <svg>
+        <use xlink:href="./img/svg/sprite.svg#instrument"></use>
+     </svg>
+    <h4>Замена и обслуживание оборудования</h4>
+    <p class="small">После установки мы продолжаем оставаться с вами на связи. И когда понадобится замена фильтров, мы готовы оказать услугу по замене.</p>
+  </div>
+</div>
+
+      </div>
+    </section>
+    <div class="container">
+      <div class="contacts-block mbe-4m mbs-4m">
+        <div class="contacts-form">
+  <div class="success-page"></div>
+  <h3>Оставить заявку</h3>
+  <form class="form form-page">
+    <label class="name">
+      <span>Ваше имя*</span>
+      <input class="input input-name-page" type="text" name="Имя" placeholder="Ваше имя*">
+    </label>
+    <label class="tel">
+      <span>Телефон*</span>
+      <input class="input input-tel-page" type="tel" name="Телефон" id="tel" placeholder="Телефон*">
+    </label>
+    <label class="email">
+      <span>E-mail*</span>
+      <input class="input input-email-page" type="email" name="Email" placeholder="E-mail*">
+    </label>
+    <textarea class="input message" name="Сообщение" placeholder="Особенности, пожелания.."></textarea>
+    <div class="checkbox-wrap">
+      <input class="checkbox checkbox-page" type="checkbox" id="agreement" checked="checked">
+      <label for="agreement">Я согласен с <a href="#">Политикой конфиденциальности</a></label>
+    </div>
+    <button type="submit" class="btn btn--submit btn-submit-page">Отправить</button>
+  </form>
+</div>
+ <div class="contacts-list-wrap">
+  <h3>Наши контакты</h3>
+  <ul class="contacts-list" role="list">
+    <li class="tel">
+      <svg><use xlink:href="./img/svg/sprite.svg#bi_phone"></use></svg>
+      <a href="tel:+78127150015">+7 (812) 715-00-15</a>
+    </li>
+    <li class="email">
+      <svg><use xlink:href="./img/svg/sprite.svg#carbon_email"></use></svg>
+      <a href="mailto:info@ventforum.ru">info@ventforum.ru</a>
+    </li>
+    <li class="hours">
+      <svg><use xlink:href="./img/svg/sprite.svg#calendar"></use></svg>Пн-Пт 9:00–18:00
+    </li>
+  </ul>
+</div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer-site">
+  <div class="container">
+    <div class="footer-top">
+      <div class="about">
+        <p class="subtitle uc">ООО «ВентФорум»</p>
+        <p class="text">Компания «Вентфорум» специализируется на проектировании, поставке и монтаже систем вентиляции, кондиционирования и отопления «под ключ»</p>
+      </div>
+      <div class="mail">
+        <p class="menu">Для почты:</p>
+        <p>194044 Санкт-Петербург <br>Большой Сампсониевский пр. 64, <br>БЦ «Компрессор»</p>
+      </div>
+      <div class="phone">
+        <p class="menu">Телефон:</p>
+        <a href="tel:+78127150015">+7 (812) 715-00-15</a>
+        <a href="tel:+78127150015">+7 (812) 715-00-15</a>
+      </div>
+      <div class="email">
+        <p class="menu">e-mail</p>
+        <a href="mailto:info@ventforum.ru">info@ventforum.ru</a> <div class="socials">
+  <a href="#" target="_blank" aria-label="Соцсеть ВКонтакте">
+    <svg><use xlink:href="./img/svg/sprite.svg#vk"></use></svg>
+  </a>
+  <a href="#" target="_blank" aria-label="Skype">
+    <svg><use xlink:href="./img/svg/sprite.svg#skype"></use></svg>
+  </a>
+  <a href="#" target="_blank" aria-label="Whatsapp">
+    <svg><use xlink:href="./img/svg/sprite.svg#whatsapp"></use></svg>
+  </a>
+  <a href="#" target="_blank" aria-label="Telegram">
+    <svg><use xlink:href="./img/svg/sprite.svg#telegram"></use></svg>
+  </a>
+  <a href="#" target="_blank" aria-label="ICQ">
+    <svg><use xlink:href="./img/svg/sprite.svg#icq"></use></svg>
+  </a>
+</div>
+
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>© Вентфорум 2023</p>
+      <p><a href="#">Системы оплаты</a></p>
+      <p><a href="#">Оферта</a></p>
+      <p><a href="#">Политика конфиденциальности</a></p>
+      <p><a class="bearlogics" href="https://bearlogics.ru/uslugi/uslugi-razrabotka/">Разработка сайта <svg>
+            <use xlink:href="./img/svg/sprite.svg#bearlogics-logo"></use></svg>
+            </a>
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+
+</html>

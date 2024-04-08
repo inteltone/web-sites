@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link rel="preload" href="fonts/RubikRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/RubikMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+
+  <header class="header-site">
+    <div class="container">
+      <div class="header-top">
+        <div class="site-logo">
+          <a href="./" title="Ссылка на Главную страницу сайта"></a>
+        </div>
+        <button class="btn btn--small">Оставить заявку</button>
+      </div>
+    </div>
+    <nav class="menu-prim" data-menu>
+      <div class="container">
+        <div class="contacts-wrap">
+          <div class="contacts">
+            <a href="tel:+78127150015" data-menu-item><svg class="">
+                  <use xlink:href="./img/svg/sprite.svg#phone"></use>
+                </svg>+7 (812) 715-00-15</a>
+            <a href="mailto:info@ventforum.ru" data-menu-item><svg class="">
+                  <use xlink:href="./img/svg/sprite.svg#mail"></use>
+                </svg>info@ventforum.ru</a>
+            <a href="#" class="cta" data-menu-item><svg>
+                  <use xlink:href="./img/svg/sprite.svg#phone-call"></use>
+                </svg>Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-prim__list-wrap">
+        <div class="container">
+          <ul class="menu-prim__list" role="list">
+            <li class="menu-item">
+              <a href="./services.html" class="menu-txt" data-menu-item>Услуги</a>
+            </li>
+            <li class="menu-item">
+              <a href="./cases.html" class="menu-txt" data-menu-item>Кейсы и клиенты</a>
+            </li>
+            <li class="menu-item">
+              <a href="./about.html" class="menu-txt" data-menu-item>О компании</a>
+            </li>
+            <li class="menu-item">
+              <a href="./partners.html" class="menu-txt" data-menu-item>Партнеры</a>
+            </li>
+            <li class="menu-item">
+              <a href="./news.html" class="menu-txt" data-menu-item>Новости</a>
+            </li>
+            <li class="menu-item">
+              <a href="./contacts.html" class="menu-txt active" data-menu-item>Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
+      </button>
+  </header>
+
+  <main>
+
+    <div class="container">
+      <ul class="breadcrumbs" role="list">
+        <li class="item"><a href="./">Главная</a></li>
+        <li class="item">Контакты</li>
+      </ul>
+      <article class="partner-page">
+        <h1 class="mbe-1m">Контакты</h1>
+        <div class="contacts-block contacts-block--contacts-page mbe-4m mbs-2m">
+          <div class="contacts-list-wrap">
+            <h3>Офис продаж</h3>
+            <ul class="contacts-list mbe-3m" role="list">
+              <li class="address">
+                <svg><use xlink:href="./img/svg/sprite.svg#fluent_location"></use></svg> 194044 Санкт-Петербург, Большой Сампсониевский пр. 64, БЦ «Компрессор»
+              </li>
+              <li class="tel">
+                <svg><use xlink:href="./img/svg/sprite.svg#bi_phone"></use></svg>
+                <a href="tel:+78127150015">+7 (812) 715-00-15</a>
+              </li>
+              <li class="email">
+                <svg><use xlink:href="./img/svg/sprite.svg#carbon_email"></use></svg>
+                <a href="mailto:info@ventforum.ru">info@ventforum.ru</a>
+              </li>
+              <li class="hours">
+                <svg><use xlink:href="./img/svg/sprite.svg#calendar"></use></svg>Мы работаем: Пн‑Пт 9:00‑18:00
+              </li>
+            </ul>
+            <div class="socials">
+  <a href="#" target="_blank" aria-label="Соцсеть ВКонтакте">
+    <svg><use xlink:href="./img/svg/sprite.svg#vk"></use></svg>
+  </a>
+  <a href="#" target="_blank" aria-label="Skype">
+    <svg><use xlink:href="./img/svg/sprite.svg#skype"></use></svg>
+  </a>
+  <a href="#" target="_blank" aria-label="Whatsapp">
+    <svg><use xlink:href="./img/svg/sprite.svg#whatsapp"></use></svg>
+  </a>
+  <a href="#" target="_blank" aria-label="Telegram">
+    <svg><use xlink:href="./img/svg/sprite.svg#telegram"></use></svg>
+  </a>
+  <a href="#" target="_blank" aria-label="ICQ">
+    <svg><use xlink:href="./img/svg/sprite.svg#icq"></use></svg>
+  </a>
+</div>
+
+          </div>
+          <div class="contacts-form">
+  <div class="success-page"></div>
+  <h3>Оставить заявку</h3>
+  <form class="form form-page">
+    <label class="name">
+      <span>Ваше имя*</span>
+      <input class="input input-name-page" type="text" name="Имя" placeholder="Ваше имя*">
+    </label>
+    <label class="tel">
+      <span>Телефон*</span>
+      <input class="input input-tel-page" type="tel" name="Телефон" id="tel" placeholder="Телефон*">
+    </label>
+    <label class="email">
+      <span>E-mail*</span>
+      <input class="input input-email-page" type="email" name="Email" placeholder="E-mail*">
+    </label>
+    <textarea class="input message" name="Сообщение" placeholder="Особенности, пожелания.."></textarea>
+    <div class="checkbox-wrap">
+      <input class="checkbox checkbox-page" type="checkbox" id="agreement" checked="checked">
+      <label for="agreement">Я согласен с <a href="#">Политикой конфиденциальности</a></label>
+    </div>
+    <button type="submit" class="btn btn--submit btn-submit-page">Отправить</button>
+  </form>
+</div>
+
+        </div>
+      </article>
+
+    </div>
+
+  </main>
+  <footer class="footer-site">
+  <div class="container">
+    <div class="footer-top">
+      <div class="about">
+        <p class="subtitle uc">ООО «ВентФорум»</p>
+        <p class="text">Компания «Вентфорум» специализируется на проектировании, поставке и монтаже систем вентиляции, кондиционирования и отопления «под ключ»</p>
+      </div>
+      <div class="mail">
+        <p class="menu">Для почты:</p>
+        <p>194044 Санкт-Петербург <br>Большой Сампсониевский пр. 64, <br>БЦ «Компрессор»</p>
+      </div>
+      <div class="phone">
+        <p class="menu">Телефон:</p>
+        <a href="tel:+78127150015">+7 (812) 715-00-15</a>
+        <a href="tel:+78127150015">+7 (812) 715-00-15</a>
+      </div>
+      <div class="email">
+        <p class="menu">e-mail</p>
+        <a href="mailto:info@ventforum.ru">info@ventforum.ru</a> <div class="socials">
+  <a href="#" target="_blank" aria-label="Соцсеть ВКонтакте">
+    <svg><use xlink:href="./img/svg/sprite.svg#vk"></use></svg>
+  </a>
+  <a href="#" target="_blank" aria-label="Skype">
+    <svg><use xlink:href="./img/svg/sprite.svg#skype"></use></svg>
+  </a>
+  <a href="#" target="_blank" aria-label="Whatsapp">
+    <svg><use xlink:href="./img/svg/sprite.svg#whatsapp"></use></svg>
+  </a>
+  <a href="#" target="_blank" aria-label="Telegram">
+    <svg><use xlink:href="./img/svg/sprite.svg#telegram"></use></svg>
+  </a>
+  <a href="#" target="_blank" aria-label="ICQ">
+    <svg><use xlink:href="./img/svg/sprite.svg#icq"></use></svg>
+  </a>
+</div>
+
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>© Вентфорум 2023</p>
+      <p><a href="#">Системы оплаты</a></p>
+      <p><a href="#">Оферта</a></p>
+      <p><a href="#">Политика конфиденциальности</a></p>
+      <p><a class="bearlogics" href="https://bearlogics.ru/uslugi/uslugi-razrabotka/">Разработка сайта <svg>
+            <use xlink:href="./img/svg/sprite.svg#bearlogics-logo"></use></svg>
+            </a>
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+
+</html>

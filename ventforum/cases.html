@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Наши клиенты и кейсы</title>
+  <link rel="preload" href="fonts/RubikRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/RubikMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+
+  <header class="header-site">
+    <div class="container">
+      <div class="header-top">
+        <div class="site-logo">
+          <a href="./" title="Ссылка на Главную страницу сайта"></a>
+        </div>
+        <button class="btn btn--small">Оставить заявку</button>
+      </div>
+    </div>
+    <nav class="menu-prim" data-menu>
+      <div class="container">
+        <div class="contacts-wrap">
+          <div class="contacts">
+            <a href="tel:+78127150015" data-menu-item><svg class="">
+                  <use xlink:href="./img/svg/sprite.svg#phone"></use>
+                </svg>+7 (812) 715-00-15</a>
+            <a href="mailto:info@ventforum.ru" data-menu-item><svg class="">
+                  <use xlink:href="./img/svg/sprite.svg#mail"></use>
+                </svg>info@ventforum.ru</a>
+            <a href="#" class="cta" data-menu-item><svg>
+                  <use xlink:href="./img/svg/sprite.svg#phone-call"></use>
+                </svg>Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-prim__list-wrap">
+        <div class="container">
+          <ul class="menu-prim__list" role="list">
+            <li class="menu-item">
+              <a href="./services.html" class="menu-txt" data-menu-item>Услуги</a>
+            </li>
+            <li class="menu-item">
+              <a href="./cases.html" class="menu-txt active" data-menu-item>Кейсы и клиенты</a>
+            </li>
+            <li class="menu-item">
+              <a href="./about.html" class="menu-txt" data-menu-item>О компании</a>
+            </li>
+            <li class="menu-item">
+              <a href="./partners.html" class="menu-txt" data-menu-item>Партнеры</a>
+            </li>
+            <li class="menu-item">
+              <a href="./news.html" class="menu-txt" data-menu-item>Новости</a>
+            </li>
+            <li class="menu-item">
+              <a href="./contacts.html" class="menu-txt" data-menu-item>Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
+      </button>
+  </header>
+
+  <main>
+
+    <div class="container">
+      <ul class="breadcrumbs" role="list">
+        <li class="item"><a href="./">Главная</a></li>
+        <li class="item">Кейсы</li>
+      </ul>
+      <article>
+        <h1>Наши клиенты и кейсы</h1>
+        <ul class="cases-block auto-grid auto-grid--350 mbs-2m mbe-4m" role="list">
+          <li class="case-item">
+            <div class="img"><img src="./img/cases/house-of-culture.jpg" alt="Дом культуры"></div>
+            <h4>Дом культуры</h4>
+            <p class="small">п. Низино</p>
+            <a href="./case.html" class="btn btn--ghost">подробнее</a>
+          </li>
+          <li class="case-item">
+            <div class="img"><img src="./img/cases/university-itmo.jpg" alt="Универсистет ИТМО"></div>
+            <h4>Универсистет ИТМО</h4>
+            <p class="small">Санкт-Петербург, Кронверкский пр., 49</p>
+            <a href="#" class="btn btn--ghost">подробнее</a>
+          </li>
+          <li class="case-item">
+            <div class="img"><img src="./img/cases/branch-of-sberbank.jpg" alt="Отделение Сбербанка"></div>
+            <h4>Отделение Сбербанка</h4>
+            <p class="small">Санкт-Петербург, ул. Красного текстильцика, 2</p>
+            <a href="#" class="btn btn--ghost">подробнее</a>
+          </li>
+          <li class="case-item">
+            <div class="img"><img src="./img/cases/department-mfc.jpg" alt="Отделение Отделение МФЦ"></div>
+            <h4>Отделение МФЦ</h4>
+            <p class="small">г. Кронштадт, ул. Зосимого, 46</p>
+            <a href="#" class="btn btn--ghost">подробнее</a>
+          </li>
+          <li class="case-item">
+            <div class="img"><img src="./img/cases/university-itmo-2.jpg" alt="Универсистет ИТМО"></div>
+            <h4>Универсистет ИТМО</h4>
+            <p class="small">г. С-Петербург, Ломоносова, 9</p>
+            <a href="#" class="btn btn--ghost">подробнее</a>
+          </li>
+          <li class="case-item">
+            <div class="img"><img src="./img/cases/pharmacy-baltzdrav.jpg" alt="Аптека БалтЗдрав"></div>
+            <h4>Аптека БалтЗдрав</h4>
+            <p class="small">г. С-Петербург, Гражданский пр., 84</p>
+            <a href="#" class="btn btn--ghost">подробнее</a>
+          </li>
+          <li class="case-item">
+            <div class="img"><img src="./img/cases/studio-upgrade.jpg" alt="Студия Upgrade"></div>
+            <h4>Студия Upgrade</h4>
+            <p class="small">г. С-Петербург, Невский пр-т, 166</p>
+            <a href="#" class="btn btn--ghost">подробнее</a>
+          </li>
+          <li class="case-item">
+            <div class="img"><img src="./img/cases/mfc-kronstadt.jpg" alt="МФЦ Кронштадт"></div>
+            <h4>МФЦ Кронштадт</h4>
+            <p class="small">г. Кронштадт, Невский пр-т, 166</p>
+            <a href="#" class="btn btn--ghost">подробнее</a>
+          </li>
+        </ul>
+      </article>
+      <aside>
+        <div class="call-to-action">
+  <h3>Вам нужна система вентиляции?</h3>
+  <p>Оставьте заявку, мы свяжемся с вами и сделаем полный расчет по вашей задаче. Цена проекта не меняется после согласования. </p>
+  <a class="btn" href="#">Получить расчет вашего кейса</a>
+</div> <div class="cases-slider splide" aria-label="Слайдер систем">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <a href="#" class="logo client-logo-slide">
+          <img src="./img/logos/clients/sber.png" alt="Сбер логотип">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="#" class="logo client-logo-slide">
+          <img src="./img/logos/clients/gazprom.png" alt="Газпром">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="#" class="logo client-logo-slide">
+          <img src="./img/logos/clients/mariinskij-teatr.png" alt="Мариинский театр">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="#" class="logo client-logo-slide">
+          <img src="./img/logos/clients/seven-suns.png" alt="Seven Suns">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="#" class="logo client-logo-slide">
+          <img src="./img/logos/clients/upgrade.png" alt="Upgrade">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="#" class="logo client-logo-slide">
+          <img src="./img/logos/clients/cronwell.png" alt="Cronwell">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="#" class="logo client-logo-slide">
+          <img src="./img/logos/clients/sber.png" alt="Сбер логотип">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="#" class="logo client-logo-slide">
+          <img src="./img/logos/clients/gazprom.png" alt="Газпром">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="#" class="logo client-logo-slide">
+          <img src="./img/logos/clients/mariinskij-teatr.png" alt="Мариинский театр">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="#" class="logo client-logo-slide">
+          <img src="./img/logos/clients/seven-suns.png" alt="Seven Suns">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="#" class="logo client-logo-slide">
+          <img src="./img/logos/clients/upgrade.png" alt="Upgrade">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="#" class="logo client-logo-slide">
+          <img src="./img/logos/clients/cronwell.png" alt="Cronwell">
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+      </aside>
+    </div>
+
+  </main>
+  <footer class="footer-site">
+  <div class="container">
+    <div class="footer-top">
+      <div class="about">
+        <p class="subtitle uc">ООО «ВентФорум»</p>
+        <p class="text">Компания «Вентфорум» специализируется на проектировании, поставке и монтаже систем вентиляции, кондиционирования и отопления «под ключ»</p>
+      </div>
+      <div class="mail">
+        <p class="menu">Для почты:</p>
+        <p>194044 Санкт-Петербург <br>Большой Сампсониевский пр. 64, <br>БЦ «Компрессор»</p>
+      </div>
+      <div class="phone">
+        <p class="menu">Телефон:</p>
+        <a href="tel:+78127150015">+7 (812) 715-00-15</a>
+        <a href="tel:+78127150015">+7 (812) 715-00-15</a>
+      </div>
+      <div class="email">
+        <p class="menu">e-mail</p>
+        <a href="mailto:info@ventforum.ru">info@ventforum.ru</a> <div class="socials">
+  <a href="#" target="_blank" aria-label="Соцсеть ВКонтакте">
+    <svg><use xlink:href="./img/svg/sprite.svg#vk"></use></svg>
+  </a>
+  <a href="#" target="_blank" aria-label="Skype">
+    <svg><use xlink:href="./img/svg/sprite.svg#skype"></use></svg>
+  </a>
+  <a href="#" target="_blank" aria-label="Whatsapp">
+    <svg><use xlink:href="./img/svg/sprite.svg#whatsapp"></use></svg>
+  </a>
+  <a href="#" target="_blank" aria-label="Telegram">
+    <svg><use xlink:href="./img/svg/sprite.svg#telegram"></use></svg>
+  </a>
+  <a href="#" target="_blank" aria-label="ICQ">
+    <svg><use xlink:href="./img/svg/sprite.svg#icq"></use></svg>
+  </a>
+</div>
+
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>© Вентфорум 2023</p>
+      <p><a href="#">Системы оплаты</a></p>
+      <p><a href="#">Оферта</a></p>
+      <p><a href="#">Политика конфиденциальности</a></p>
+      <p><a class="bearlogics" href="https://bearlogics.ru/uslugi/uslugi-razrabotka/">Разработка сайта <svg>
+            <use xlink:href="./img/svg/sprite.svg#bearlogics-logo"></use></svg>
+            </a>
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+
+</html>
